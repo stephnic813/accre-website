@@ -18,3 +18,35 @@ function scrollFunction() {
   }
 }
 
+
+
+
+
+
+
+
+
+/* Show/collapse sidebar(nav) */
+const nav = document.querySelector("nav");
+const hamburgerBtn = document.querySelector("header > button:first-child");
+
+document.addEventListener("click", (event) => {
+  console.log(nav.contains(event.target));
+  if (hamburgerBtn.contains(event.target) || 
+      nav.contains(event.target)) {
+    showNav();
+  }
+  else {
+    collapseNav();
+  }
+});
+
+const showNav = function() {
+  nav.classList.add("nav-slide-in");
+  nav.classList.remove("nav-slide-out");
+};
+
+const collapseNav = function() {
+  nav.classList.add("nav-slide-out");
+  nav.classList.remove("nav-slide-in");
+};

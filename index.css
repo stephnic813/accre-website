@@ -111,12 +111,12 @@ nav {
     background-color: pink;
     width: 30%;
     padding: 1rem;
-    position: absolute;
-    /* transform: translate(-100%); */
+    position: fixed;
+    transform: translate(-100%);
     z-index: 1;
     height: 100dvh;
     font-size: var(--fs-smaller);
-    transition: sli;
+    top: 0;
 }
 
 @keyframes nav-slide-in {
@@ -128,8 +128,20 @@ nav {
     }
 }
 
+@keyframes nav-slide-out {
+    from {
+        transform: translate(0%);
+    }
+    to {
+        transform: translate(-100%);
+    }
+}
+
 .nav-slide-in {
     animation: nav-slide-in 0.25s ease-in both;
+}
+.nav-slide-out {
+    animation: nav-slide-out 0.25s ease-in both;
 }
 
 /* HomePage */
