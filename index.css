@@ -30,6 +30,8 @@ header > box-icon > svg {
 
 header > box-icon:last-child {
     align-self: center;
+    top: 0;
+    z-index: 10000;
 }
 
 .launch-main-container{
@@ -41,7 +43,6 @@ header > box-icon:last-child {
     text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative;
     
 }
 .launch-main-title{
