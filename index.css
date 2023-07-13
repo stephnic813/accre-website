@@ -1,4 +1,5 @@
 :root {
+    --fs-smallest: calc(0.25em + 1vw);
     --fs-smaller: calc(0.5em + 1vw);
     --fs-small: calc(0.75em + 1vw);
     --fs-regular: calc(1em + 1vw);
@@ -125,7 +126,6 @@ nav {
 nav > *,
 nav button {
     color: var(--clr-text-contrast) !important;
-    /* height: 100dvh; */
 }
 
 /* nav > */
@@ -159,6 +159,10 @@ nav button {
     background-color: transparent !important;
 }
 
+nav button.btn-toggle ~ div button {
+    font-size: var(--fs-smallest) !important;
+    padding: 0 5rem !important;
+}
 
 @keyframes nav-slide-in {
     from {
