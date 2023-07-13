@@ -9,29 +9,31 @@ body{
 }
 
 header{
-    height: 100vh;
-    width: 100vw;
-    background-color: #800000 ; 
-    
-    /* top: 0; */
+    height: 100dvh;
+    width: 100dvw;
+    background-color: #800000;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-header > box-icon {
-    height: 10%;
-    font-size: 5rem;
+    justify-content: space-between;
 }
 
-header > box-icon > svg {
-    width: 3rem;
-    height: 3rem;
+header > button {
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #800000;
+    cursor: pointer;
+    color: #ffff;
 }
 
-header > box-icon:last-child {
+
+header > button:last-child {
     align-self: center;
-    top: 0;
-    z-index: 10000;
+}
+
+button {
+    border-width: 0;
+    width: min-content;
 }
 
 .launch-main-container{
@@ -62,5 +64,5 @@ header > box-icon:last-child {
 }
 
 .home{
-    height: 100vh;
+    height: 100dvh;
 }
