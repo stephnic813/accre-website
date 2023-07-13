@@ -58,8 +58,6 @@ button {
     align-items: center;
     text-align: center;
     color: white;
-    
-    
 }
 .launch-main-title {
     font-size: var(--fs-large);
@@ -79,4 +77,15 @@ button {
 
 .home {
     height: 100dvh;
+}
+
+nav {
+    background-color: pink;
+    width: 30%;
+    padding: 1rem;
+    position: absolute;
+    /* transform: translate(-100%); */
+    z-index: 1;
+    height: 100dvh;
+    font-size: var(--fs-small);
 }
