@@ -17,8 +17,4 @@ function scrollFunction() {
     document.querySelector(".launch-main-quote").style.fontSize = "2em";  
   }
 }
-const header = document.querySelector("header")
 
-window.addEventListener("scroll", function(){
-    header.classList.toggle("sticky", window.scrollTop > 80);
-})
