@@ -1,3 +1,10 @@
+:root {
+    --fs-small: calc(0.75em + 1vw);
+    --fs-regular: calc(1em + 1vw);
+    --fs-large: calc(1.5em + 1vw);
+}
+
+
 *{
     margin: 0;
     padding: 0;
