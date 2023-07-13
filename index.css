@@ -132,14 +132,24 @@ nav > div {
     display: flex;
     align-items: center;
     font-size: var(--fs-large);
+    height: 10%
 }
 
 nav > div > img {
     width: 6rem;
     height: auto;
     padding: 0 1rem;
-
 }
+
+nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    margin-left: 2rem;
+}
+
+
 
 
 @keyframes nav-slide-in {
