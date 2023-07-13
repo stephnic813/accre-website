@@ -1,10 +1,4 @@
-:root {
-    --fs-small: calc(0.75em + 1vw);
-    --fs-regular: calc(1em + 1vw);
-    --fs-large: calc(1.5em + 1vw);
-}
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,11 +8,11 @@
 html{
     scroll-behavior: smooth;
 }
-body {
+body{
     font-family: 'Poppins', sans-serif;
 }
 
-header {
+header{
     height: 100dvh;
     background-color: #800000;
     display: flex;
@@ -32,7 +26,7 @@ header {
 }
 
 header > button {
-    font-size: var(--fs-regular);
+    font-size: 2.5rem;
     padding: 1rem;
     margin: 1rem;
     background-color: #800000;
@@ -50,7 +44,7 @@ button {
     width: min-content;
 }
 
-.launch-main-container {
+.launch-main-container{
     /* height: 80%; */
     display: flex;
     flex-direction: column;
@@ -58,24 +52,27 @@ button {
     align-items: center;
     text-align: center;
     color: white;
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+    
 }
-.launch-main-title {
-    font-size: var(--fs-large);
+.launch-main-title{
+    font-size: 3em;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.launch-main-course {
-    font-size: var(--fs-regular);
+.launch-main-course{
+    font-size: 2.6em;
     font-weight: 600;
     
 }
 
-.launch-main-quote {
-    font-size: var(--fs-small);
+.launch-main-quote{
+    font-size: 2em;
     font-weight: 300;
 }
 
-.home {
+.home{
     height: 100dvh;
 }
 
@@ -88,4 +85,34 @@ nav {
     z-index: 1;
     height: 100dvh;
     font-size: var(--fs-small);
+}
+
+
+/* HomePage */
+.home{
+    margin-top: 20vh;
+}
+.home-main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;  
+    margin: 0 20rem;
+    
+}
+
+.home-container-passingrate-one,.home-container-passingrate-three{
+    padding-top: 20rem;
+}
+.home-container-percentage{
+    font-size: 5.5em;
+    font-weight: 700;
+}
+.home-container-details{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.home-main-images{
+    display: flex;
+    
 }
