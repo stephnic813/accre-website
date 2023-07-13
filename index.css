@@ -172,6 +172,10 @@ nav button.btn-toggle ~ div button {
     padding: 0 5rem !important;
 }
 
+nav button.btn-toggle[aria-expanded="true"] > i:last-child {
+    transform: rotate(180deg);
+}
+
 @keyframes nav-slide-in {
     from {
         transform: translate(-100%);
