@@ -60,7 +60,7 @@ header > button {
     background-color: #800000;
     cursor: pointer;
     color: #ffff;
-    
+    width: min-content;
 }
 
 header > button:last-child {
@@ -69,7 +69,7 @@ header > button:last-child {
 
 button {
     border-width: 0;
-    width: min-content;
+    width: 100%;
 }
 
 ul, ol {
@@ -118,15 +118,17 @@ nav {
     transform: translate(-100%);
     z-index: 1;
     height: 100dvh;
-    font-size: var(--fs-smaller);
     top: 0;
-    /* opacity: 0.75; */
-    text-transform: uppercase;
+
 }
 
-nav > * {
-    color: var(--clr-text-contrast);
+nav > *,
+nav button {
+    color: var(--clr-text-contrast) !important;
+    /* height: 100dvh; */
 }
+
+/* nav > */
 
 nav > div {
     display: flex;
@@ -146,10 +148,16 @@ nav > ul {
     flex-direction: column;
     justify-content: space-between;
     height: 90%;
-    margin-left: 2rem;
 }
 
-
+nav button {
+    padding: 0 2rem !important;
+    text-align: start !important;
+    font-size: var(--fs-smaller) !important;
+    text-transform: uppercase;
+    border-radius: 15px;
+    background-color: transparent !important;
+}
 
 
 @keyframes nav-slide-in {
@@ -177,13 +185,14 @@ nav > ul {
     animation: nav-slide-out 0.25s ease-in both;
 }
 
+
 /* HomePage */
 .home{
     background: url(images/Home_background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-     background-size: cover;
+    background-size: cover;
 }
 .home-main-container{
     display: flex;
@@ -191,7 +200,7 @@ nav > ul {
     justify-content: space-around;
     text-align: center;  
     margin: 0 20rem;
- 
+
 }
 
 .home-container-passingrate-one,.home-container-passingrate-three{
