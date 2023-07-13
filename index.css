@@ -1,8 +1,12 @@
 :root {
+    --fs-smallest: calc(0.25em + 1vw);
     --fs-smaller: calc(0.5em + 1vw);
     --fs-small: calc(0.75em + 1vw);
     --fs-regular: calc(1em + 1vw);
     --fs-large: calc(1.5em + 1vw);
+
+    --clr-nav: #000000a8;
+    --clr-text-contrast: #ffff;
 }
 
 
@@ -57,7 +61,7 @@ header > button {
     background-color: #800000;
     cursor: pointer;
     color: #ffff;
-    
+    width: min-content;
 }
 
 header > button:last-child {
@@ -66,7 +70,7 @@ header > button:last-child {
 
 button {
     border-width: 0;
-    width: min-content;
+    width: 100%;
 }
 
 ul, ol {
@@ -108,15 +112,68 @@ ul, ol {
 }
 
 nav {
-    background-color: pink;
+    background-color: var(--clr-nav);
     width: 30%;
     padding: 1rem;
     position: fixed;
     transform: translate(-100%);
     z-index: 1;
     height: 100dvh;
-    font-size: var(--fs-smaller);
     top: 0;
+
+}
+
+nav > *,
+nav button {
+    color: var(--clr-text-contrast) !important;
+}
+
+/* nav > */
+
+nav > div {
+    display: flex;
+    align-items: center;
+    font-size: var(--fs-large);
+    height: 10%
+}
+
+nav > div > img {
+    width: 6rem;
+    height: auto;
+    padding: 0 1rem;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+
+/* nav > ul  > li {
+} */
+
+nav button {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 2rem !important;
+    text-align: start !important;
+    font-size: var(--fs-smaller) !important;
+    text-transform: uppercase;
+    border-radius: 15px;
+    background-color: transparent !important;
+}
+
+nav button.btn-toggle ~ div button {
+    font-size: var(--fs-smallest) !important;
+    padding: 0 5rem !important;
+}
+
+nav button.btn-toggle[aria-expanded="true"] > i:last-child {
+    transform: rotate(180deg);
 }
 
 @keyframes nav-slide-in {
@@ -144,13 +201,14 @@ nav {
     animation: nav-slide-out 0.25s ease-in both;
 }
 
+
 /* HomePage */
 .home{
     background: url(images/Home_background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-     background-size: cover;
+    background-size: cover;
 }
 .home-main-container{
     display: flex;
@@ -158,7 +216,7 @@ nav {
     justify-content: space-around;
     text-align: center;  
     margin: 0 20rem;
- 
+
 }
 
 .home-container-passingrate-one,.home-container-passingrate-three{
@@ -203,12 +261,14 @@ nav {
     color: #ffff;
     text-shadow: 5px 1px 5px black;
 }
+
 .home-main-images{
     display: flex;
     justify-content: flex-end;
     margin-top: 5rem;
     margin-right: 17rem;
 }
+
 .home-image img{
     width:  12vh;
     margin: 0 0.5rem;

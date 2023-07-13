@@ -26,12 +26,12 @@ function scrollFunction() {
 
 
 
-/* Show/collapse sidebar(nav) */
+/* Show or collapse sidebar (nav) */
 const nav = document.querySelector("nav");
 const hamburgerBtn = document.querySelector("header > button:first-child");
 
 document.addEventListener("click", (event) => {
-  console.log(nav.contains(event.target));
+  // console.log(nav.contains(event.target));
   if (hamburgerBtn.contains(event.target) || 
       nav.contains(event.target)) {
     showNav();
