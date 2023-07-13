@@ -1,4 +1,10 @@
-*{
+:root {
+    --fs-small: calc(0.75em + 1vw);
+    --fs-regular: calc(1em + 1vw);
+    --fs-large: calc(1.5em + 1vw);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,11 +14,11 @@
 html{
     scroll-behavior: smooth;
 }
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
 
-header{
+header {
     height: 100dvh;
     background-color: #800000;
     display: flex;
@@ -26,7 +32,7 @@ header{
 }
 
 header > button {
-    font-size: 2.5rem;
+    font-size: var(--fs-regular);
     padding: 1rem;
     margin: 1rem;
     background-color: #800000;
@@ -44,7 +50,7 @@ button {
     width: min-content;
 }
 
-.launch-main-container{
+.launch-main-container {
     /* height: 80%; */
     display: flex;
     flex-direction: column;
@@ -55,22 +61,22 @@ button {
     
     
 }
-.launch-main-title{
-    font-size: 3em;
+.launch-main-title {
+    font-size: var(--fs-large);
     font-family: 'Times New Roman', Times, serif;
 }
 
-.launch-main-course{
-    font-size: 2.6em;
+.launch-main-course {
+    font-size: var(--fs-regular);
     font-weight: 600;
     
 }
 
-.launch-main-quote{
-    font-size: 2em;
+.launch-main-quote {
+    font-size: var(--fs-small);
     font-weight: 300;
 }
 
-.home{
+.home {
     height: 100dvh;
 }
