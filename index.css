@@ -36,8 +36,17 @@ header:before{
     display: block;
     width: 100%;
     height: 5px;
-    background: yellow;
+    background: #deaa2a;
     top: 100%;
+    position: absolute;
+}
+header:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #314628;
+    top: 102%;
     position: absolute;
 }
 
@@ -90,7 +99,7 @@ ul, ol {
 
 .launch-main-quote{
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 400;
     transition: all ease-in-out 0.5s;
 }
 
@@ -137,7 +146,11 @@ nav {
 
 /* HomePage */
 .home{
-    margin-top: 20vh;
+    background: url(images/Home_background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
 }
 .home-main-container{
     display: flex;
@@ -145,20 +158,60 @@ nav {
     justify-content: space-around;
     text-align: center;  
     margin: 0 20rem;
-    
+ 
 }
 
 .home-container-passingrate-one,.home-container-passingrate-three{
     padding-top: 20rem;
 }
-.home-container-percentage{
-    font-size: 5.5em;
-    font-weight: 700;
+
+.home-container-passingrate-one,.home-container-passingrate-three{
+    padding-top: 20rem;
 }
-.home-container-details{
+.home-container-percentage-one, .home-container-percentage-three{
+    text-shadow: 5px 1px #f2ca3e;
+    font-size: 6em;
+    font-weight: 700;
+    color: #800000;
+}
+.home-container-details-one, .home-container-details-three{
+    font-size: 1em;
+    font-weight: 700;
+    color: #ffff;
+    text-shadow: 5px 1px 5px black;
+}
+.home-container-national-one, .home-container-national-three{
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #ffff;
+    text-shadow: 5px 1px 5px black;
+}
+.home-container-percentage-two{
+    font-size: 8em;
+    text-shadow: 5px 1px #f2ca3e;
+    font-weight: 700;
+    color: #800000;
+}
+.home-container-details-two{
     font-size: 1.5em;
     font-weight: 700;
+    color: #ffff;
+    text-shadow: 5px 1px 5px black;
+}
+.home-container-national-two{
+    font-weight: 700;
+    color: #ffff;
+    text-shadow: 5px 1px 5px black;
 }
 .home-main-images{
     display: flex;
+    justify-content: flex-end;
+    margin-top: 5rem;
+    margin-right: 17rem;
+}
+.home-image img{
+    width:  12vh;
+    margin: 0 0.5rem;
+    height: auto;
+    object-fit: cover;
 }
