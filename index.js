@@ -1,7 +1,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  if (scrollY > 3) {
     document.querySelector("header").style.height= "20vh";
     document.querySelector("header").style.flexDirection = "row";
     document.querySelector(".home-arrow-down").style.display = "none";
