@@ -150,7 +150,15 @@ nav > ul {
     height: 90%;
 }
 
+/* nav > ul  > li {
+} */
+
 nav button {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
     padding: 0 2rem !important;
     text-align: start !important;
     font-size: var(--fs-smaller) !important;
