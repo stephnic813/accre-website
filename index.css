@@ -9,6 +9,10 @@
     padding: 0;
     box-sizing: border-box;
     
+    
+}
+html{
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -20,6 +24,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    top: 0;
+    position: sticky;
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+
 }
 
 header > button {
@@ -49,7 +58,7 @@ button {
     align-items: center;
     text-align: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    
     
 }
 .launch-main-title {
