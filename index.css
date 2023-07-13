@@ -1,3 +1,10 @@
+:root {
+    --fs-small: calc(0.75em + 1vw);
+    --fs-regular: calc(1em + 1vw);
+    --fs-large: calc(1.5em + 1vw);
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -75,6 +82,18 @@ button {
 .home{
     height: 100dvh;
 }
+
+nav {
+    background-color: pink;
+    width: 30%;
+    padding: 1rem;
+    position: absolute;
+    /* transform: translate(-100%); */
+    z-index: 1;
+    height: 100dvh;
+    font-size: var(--fs-small);
+}
+
 
 /* HomePage */
 .home{
