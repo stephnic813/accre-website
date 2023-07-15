@@ -1,0 +1,28 @@
+/* Extension and Community */
+.extension-community-main{
+    height: 100dvh;
+    margin: 0;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+.extension-community-title{
+    font-size: var(--fs-large);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
+}
+.swiper-container{
+    width: 100dvw;
+    padding-top: 2em ;
+    padding-bottom: 8em;
+}
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
+}
