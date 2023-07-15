@@ -214,18 +214,18 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .home > div:nth-child(1) {
-    background: url(images/Home_background.jpg) no-repeat center center fixed; 
-
+    background-image: url(images/Home_background.jpg);
 }
 
 .home > div:nth-child(2) {
-    background: url(images/Global\ UGRAD\ Awardees.jpg) no-repeat center center fixed; 
+    background-image: url(images/Global\ UGRAD\ Awardees.jpg);
 }
 
 .home > div:nth-child(3) {
-    background: url(images/Jam\ Lopez\ Fulbright\ Awarding.jpg) no-repeat center center fixed; 
+    background-image: url(images/Jam\ Lopez\ Fulbright\ Awarding.jpg);
 }
 
 
@@ -234,8 +234,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    /* margin: 0 20rem; */
-    width: 100vw;
+    width: 100%;
 }
 
 
