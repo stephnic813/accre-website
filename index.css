@@ -130,8 +130,6 @@ nav button {
     color: var(--clr-text-contrast) !important;
 }
 
-/* nav > */
-
 nav > div {
     display: flex;
     align-items: center;
@@ -222,6 +220,20 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 
 .home > div:nth-child(2) {
     background-image: url(images/Global\ UGRAD\ Awardees.jpg);
+    display: flex;
+    flex-direction: column-reverse;
+    color: var(--clr-text-contrast);
+    text-align: center;
+    font-size: var(--fs-smaller);
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+}
+
+.home > div:nth-child(2) > hgroup {
+    padding: 0 3rem;
+}
+
+.home > div:nth-child(2) > hgroup > h3 {
+    font-size: var(--fs-large) !important;
 }
 
 .home > div:nth-child(3) {
@@ -295,9 +307,6 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     height: auto;
     object-fit: cover;
 }
-
-
-
 
 
 
