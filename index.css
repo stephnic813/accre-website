@@ -119,7 +119,7 @@ nav {
     padding: 1rem;
     position: fixed;
     transform: translate(-100%);
-    z-index: 1;
+    z-index: 1000;
     height: 100dvh;
     top: 0;
 
@@ -441,10 +441,11 @@ header .launch-main-quote {
     background-repeat: no-repeat;
 }
 .card{
-    height: 35em !important;
+    height: 70dvh !important;
 }
 .card-body {
     background-color: #640000; 
+    height: 100%  !important;
     
 }
 .card-body h4{
@@ -453,18 +454,21 @@ header .launch-main-quote {
     font-size: var(--fs-small);
     color: white; 
     text-align: center;
+    z-index: 1;
 }
 .card-img-grad{
     
     width: 100% !important;
-    height: 90% !important;
+    height: 93% !important;
     object-fit: cover;
     
 }
-.item:nth-child(even) .card-img-grad{
-    border: solid 5px #deaa2a !important ;
-}
-.item:nth-child(odd) .card-img-grad{
+.owl-carousel div:nth-child(odd) .card-img-grad{
     border: solid 5px #314628 !important ;
 }
+
+.owl-carousel div:nth-child(even) .card-img-grad{
+    border: solid 5px #deaa2a !important ;
+}
+
 
