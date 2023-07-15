@@ -271,6 +271,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     /* margin-top: 5rem; */
     /* margin-right: 17rem; */
     margin-top: 5rem;
+    padding-right: 5rem;
 }
 
 .home-image img{
@@ -285,7 +286,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 .home > div:nth-child(2) {
-    background-image: url(images/Global\ UGRAD\ Awardees.jpg);
+    background-image: url(images/Global\ UGRAD\ Awardees-cropped.jpg);
     display: flex;
     flex-direction: column-reverse;
     color: var(--clr-text-contrast);
@@ -296,6 +297,10 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 
 .home > div:nth-child(2) > hgroup {
     padding: 0 3rem;
+}
+
+.home > div:nth-child(2) > hgroup > * {
+    padding-bottom: 3rem;
 }
 
 .home > div:nth-child(2) > hgroup > h3 {
@@ -314,16 +319,13 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('./images/Pscyh-Background.png');
-
-
-
 }
 
 .home > div:nth-child(3) > div:first-child {
     height: 70dvh;
     width: 30dvw;
-
 }
+
 .home > div:nth-child(3) > div:nth-child(2) {
     width: 60dvw;
     font-size: var(--fs-smaller);
