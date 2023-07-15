@@ -14,9 +14,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -24,7 +23,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-header{
+header.header-home {
     height: 100dvh;
     background-color: #800000 ;
     display: flex;
@@ -150,9 +149,6 @@ nav > ul {
     height: 90%;
 }
 
-/* nav > ul  > li {
-} */
-
 nav button {
     display: flex !important;
     flex-direction: row;
@@ -275,3 +271,53 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     height: auto;
     object-fit: cover;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* TEMPLATE HEADER */
+header {
+    height: 20vh;
+    flex-direction: row;
+    background-color: #800000 ;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    transition: all ease-in-out 0.5s;
+}
+
+header > button:last-child {
+    visibility: hidden;
+}
+
+header .launch-main-title {
+    font-size: 2.2em;
+}
+
+header .launch-main-course {
+    font-size: 1.75em;
+}
+
+header .launch-main-quote {
+    font-size: 1.2em;
+}
+
+/* header > .home */
+
+
+/* flex-direction: column;
+height: 100dvh;
+top: 0; */
+/* document.querySelector("header").style.height= "20vh";
+document.querySelector("header").style.flexDirection = "row";
+document.querySelector(".home-arrow-down").style.display = "none";
+document.querySelector(".launch-main-title").style.fontSize = "2.2em";
+document.querySelector(".launch-main-course").style.fontSize = "1.75em";
+document.querySelector(".launch-main-quote").style.fontSize = "1.2em"; */
