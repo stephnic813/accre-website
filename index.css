@@ -297,15 +297,6 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* TEMPLATE HEADER */
 header {
     height: 20vh;
@@ -359,22 +350,58 @@ header .launch-main-quote {
 .extension-community-main{
     height: 100dvh;
     margin: 0;
-    padding: 0;
+    padding-top: 2em;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     overflow: hidden;
 }
+.extension-community-title{
+    font-size: var(--fs-large);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
+}
 .swiper-container{
     width: 100dvw;
-    padding-top: 5em ;
+    padding-top: 2em ;
     padding-bottom: 8em;
 }
 .swiper-slide{
     background-position: center;
     background-size: cover;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
+}
+
+.about-us-main{
+    background: url('./images/Pscyh-Background.png');
+    height: 80dvh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.about-us-vision{
+    padding-top: 3em ;
+}
+.about-us-container, .about-us-mission-vision-container{
+    margin: 0 5em;
+}
+.about-us-title{
+    font-weight: 700;
+    font-size: var(--fs-extra-large)
+}
+.about-us-details{
+    font-weight: 500;
+    font-size: var(--fs-smallest);
 }
