@@ -81,11 +81,11 @@ const swiperEl = document.querySelector('graduates-slider')
           spaceBetween: 20,
         },
         768: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 40,
         },
         1024: {
-          slidesPerView: 5,
+          slidesPerView: 3,
           spaceBetween: 50,
         },
       },
