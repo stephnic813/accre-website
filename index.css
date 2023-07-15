@@ -429,27 +429,42 @@ header .launch-main-quote {
     font-size: var(--fs-smallest);
 }
 
-.graduates-main-container{
-    position: relative;
-    height: 100%;
-}
-.swiper-container-graduates {
+/* Performance Graduates */
+.performance-graduates-main{
+    background: url(images/Pscyh-Background.png);
+    height: 75dvh;
     width: 100%;
-    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-.swiper-slide-graduates {
+.card{
+    height: 35em !important;
+}
+.card-body {
+    background-color: #640000; 
+    
+}
+.card-body h4{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    font-size: var(--fs-small);
+    color: white; 
     text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.card-img-grad{
+    
+    width: 100% !important;
+    height: 90% !important;
+    object-fit: cover;
+    
+}
+.item:nth-child(even) .card-img-grad{
+    border: solid 5px #deaa2a !important ;
+}
+.item:nth-child(odd) .card-img-grad{
+    border: solid 5px #314628 !important ;
 }
 
-.swiper-slide-graduates img {
-    display: block;
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-}
