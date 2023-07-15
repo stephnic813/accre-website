@@ -203,7 +203,6 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 .home {
     display: flex;
     flex-direction: column;
-    
 }
 .home > div {
     height: 100dvh;
@@ -214,32 +213,6 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.home > div:nth-child(1) {
-    background-image: url(images/Home_background.jpg);
-}
-
-.home > div:nth-child(2) {
-    background-image: url(images/Global\ UGRAD\ Awardees.jpg);
-    display: flex;
-    flex-direction: column-reverse;
-    color: var(--clr-text-contrast);
-    text-align: center;
-    font-size: var(--fs-smaller);
-    text-shadow: 2px 2px 0 rgb(0, 0, 0);
-}
-
-.home > div:nth-child(2) > hgroup {
-    padding: 0 3rem;
-}
-
-.home > div:nth-child(2) > hgroup > h3 {
-    font-size: var(--fs-large) !important;
-}
-
-.home > div:nth-child(3) {
-    background-image: url(images/Jam\ Lopez\ Fulbright\ Awarding.jpg);
-}
-
 
 .home-main-container{
     display: flex;
@@ -248,7 +221,6 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     text-align: center;
     width: 100%;
 }
-
 
 .home-container-passingrate-one,.home-container-passingrate-three{
     padding-top: 20rem;
@@ -308,7 +280,65 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     object-fit: cover;
 }
 
+.home > div:nth-child(1) {
+    background-image: url(images/Home_background.jpg);
+}
 
+.home > div:nth-child(2) {
+    background-image: url(images/Global\ UGRAD\ Awardees.jpg);
+    display: flex;
+    flex-direction: column-reverse;
+    color: var(--clr-text-contrast);
+    text-align: center;
+    font-size: var(--fs-smaller);
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+}
+
+.home > div:nth-child(2) > hgroup {
+    padding: 0 3rem;
+}
+
+.home > div:nth-child(2) > hgroup > h3 {
+    font-size: var(--fs-large) !important;
+}
+
+.home > div:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80dvh;
+    padding: 3rem;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./images/Pscyh-Background.png');
+
+
+
+}
+
+.home > div:nth-child(3) > div:first-child {
+    height: 70dvh;
+    width: 30dvw;
+
+}
+.home > div:nth-child(3) > div:nth-child(2) {
+    width: 60dvw;
+    font-size: var(--fs-smaller);
+    text-align: justify;
+}
+
+.home > div:nth-child(3) > div > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    border: solid 7px #800000;
+    box-shadow: 7px 7px #314628;
+}
 
 
 
