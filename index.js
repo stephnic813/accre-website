@@ -31,12 +31,11 @@ const nav = document.querySelector("nav");
 const hamburgerBtn = document.querySelector("header > button:first-child");
 
 document.addEventListener("click", (event) => {
-  // console.log(nav.contains(event.target));
   if (hamburgerBtn.contains(event.target) || 
       nav.contains(event.target)) {
     showNav();
   }
-  else {
+  else if (nav.classList.contains("nav-slide-in")) {
     collapseNav();
   }
 });
