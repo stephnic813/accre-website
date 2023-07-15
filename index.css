@@ -34,6 +34,7 @@ header.header-home {
     top: 0;
     position: sticky;
     transition: all ease-in-out 0.5s;
+    z-index: 1;
 }
 
 header:before{
@@ -108,9 +109,9 @@ ul, ol {
     transition: all ease-in-out 0.5s;
 }
 
-.home{
+/* .home{
     height: 100dvh;
-}
+} */
 
 nav {
     background-color: var(--clr-nav);
@@ -201,21 +202,42 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 
 
 /* HomePage */
-.home{
-    background: url(images/Home_background.jpg) no-repeat center center fixed; 
+.home {
+    display: flex;
+    flex-direction: column;
+    
+}
+.home > div {
+    height: 100dvh;
+    width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+.home > div:nth-child(1) {
+    background: url(images/Home_background.jpg) no-repeat center center fixed; 
+
+}
+
+.home > div:nth-child(2) {
+    background: url(images/Global\ UGRAD\ Awardees.jpg) no-repeat center center fixed; 
+}
+
+.home > div:nth-child(3) {
+    background: url(images/Jam\ Lopez\ Fulbright\ Awarding.jpg) no-repeat center center fixed; 
+}
+
+
 .home-main-container{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    text-align: center;  
-    margin: 0 20rem;
-
+    text-align: center;
+    /* margin: 0 20rem; */
+    width: 100vw;
 }
+
 
 .home-container-passingrate-one,.home-container-passingrate-three{
     padding-top: 20rem;
@@ -263,8 +285,9 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 .home-main-images{
     display: flex;
     justify-content: flex-end;
+    /* margin-top: 5rem; */
+    /* margin-right: 17rem; */
     margin-top: 5rem;
-    margin-right: 17rem;
 }
 
 .home-image img{
