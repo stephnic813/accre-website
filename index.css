@@ -4,6 +4,8 @@
     --fs-small: calc(0.75em + 1vw);
     --fs-regular: calc(1em + 1vw);
     --fs-large: calc(1.5em + 1vw);
+    --fs-extra-large: calc(2em + 1vw);
+    --fs-double-extra-large: calc(2.5em + 1vw);
 
     --clr-nav: #000000a8;
     --clr-text-contrast: #ffff;
@@ -309,15 +311,24 @@ header .launch-main-quote {
     font-size: 1.2em;
 }
 
-/* header > .home */
 
+/* Compliance Report */
+.compliance-report-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.3em 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.compliance-report-title{
+    font-size: var(--fs-large);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;  
+}
 
-/* flex-direction: column;
-height: 100dvh;
-top: 0; */
-/* document.querySelector("header").style.height= "20vh";
-document.querySelector("header").style.flexDirection = "row";
-document.querySelector(".home-arrow-down").style.display = "none";
-document.querySelector(".launch-main-title").style.fontSize = "2.2em";
-document.querySelector(".launch-main-course").style.fontSize = "1.75em";
-document.querySelector(".launch-main-quote").style.fontSize = "1.2em"; */
+.compliance-report-subtitle{
+    font-size: var(--fs-extra-large);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;  
+}
