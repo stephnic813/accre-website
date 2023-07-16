@@ -118,6 +118,10 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
+        <div>
+            <h5 class="slide-content-title">Title of the Content 1</h5>
+            <p class="slide-content">TEST 1 TEST 1 TEST 1 TEST 1 TEST 1 TEST 1 TEST 1 TEST 1 TEST 1 TEST 1 TEST 1 TEST 1 TEST 1 TEST 1 TEST 1</p>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
@@ -137,6 +141,63 @@
         },
         // loop:true,
         });
+    </script>
+
+    <script>
+        const slideToContent = new Map();
+        const slides = document.querySelectorAll(".extension-community-main .swiper-slide");
+        let currentSlide = slides[0];
+        const slideTitle = document.querySelector(".slide-content-title");
+        const slideContent = document.querySelector(".slide-content");
+        let json;
+
+        caller();
+        // changeContents();
+
+
+        async function getJSON() {
+            return fetch('./extension-community.json')
+            .then((response)=>response.json())
+            .then((responseJson)=>{return responseJson});
+        }
+        
+        async function caller() {
+            json = await this.getJSON(); 
+
+            for (const slide of slides) {
+                slideToContent.set(slide.id, json[slide.id]);
+            }
+
+            const observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutationRecord) {
+                    checkSlideChange();
+                });    
+            });
+            const target = slides[0];
+            observer.observe(target, { attributes : true, attributeFilter : ['style'] });
+        }
+
+        function checkSlideChange() {
+            if (currentSlide.style.zIndex !== "1") {
+                for (const slide of slides) {
+                    if (slide.style.zIndex === "1") {
+                        currentSlide = slide;
+                        changeContents();
+                        break;
+                    }
+                }
+            }
+        }
+
+        function changeContents() {
+            // console.log(json[currentSlide.id]);
+            slideTitle.innerHTML = json[currentSlide.id]["title"];
+            slideContent.innerHTML = json[currentSlide.id]["content"];
+        }
+
+
+    
+
     </script>
 </body>
 </html>

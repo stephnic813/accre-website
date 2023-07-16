@@ -45,9 +45,4 @@ const collapseNav = function() {
 };
 
 
-async function fetchContents() {
-  const response = await fetch('./extension-community.json')
-  const fetchSlideshow = await response.json();
-  console.log(fetchSlideshow)
-}
-fetchContents()
+
