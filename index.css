@@ -543,3 +543,14 @@ header .launch-main-quote {
     font-size: var(--fs-double-smallest);
     font-weight: 400;
 }
+
+/* Title with Flipbook Contents */
+.psych-title-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-extra-large);
+    font-weight: 700;
+}
