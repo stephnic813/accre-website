@@ -1,4 +1,5 @@
 :root {
+    --fs-double-smallest: calc(0.2em + 1vw);
     --fs-smallest: calc(0.25em + 1vw);
     --fs-smaller: calc(0.5em + 1vw);
     --fs-small: calc(0.75em + 1vw);
@@ -471,4 +472,74 @@ header .launch-main-quote {
     border: solid 5px #deaa2a !important ;
 }
 
+/* Faculty Tab */
+.faculty-container-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2em 0;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+.faculty-title{
+    font-size: var(--fs-extra-large);
+    font-weight: 600;
+}
+.faculty-container-top{
+    display: grid;
+    grid-template-columns: 30em 30em;
+    gap: 2em;
+    margin: 1em 0;
+    
+}
+.faculty-wrapper-top{
+    display: flex;
+    flex-direction: row;
+    
+}
+.faculty-wrapper-top img{
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+}
+.faculty-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.faculty-name-top{
+    font-size: var(--fs-small);
+    font-weight: 600;
+    margin-bottom: 0em;
+}
+.faculty-position-top{
+    font-size: var(--fs-smallest);
+    font-weight: 400;
+}
+/* Bottom Part */
+.faculty-container-bottom{
+    display: grid;
+    grid-template-columns: 25em 25em 25em;
+    gap: 2em; 
+}
+.faculty-wrapper-bottom{
+    display: flex;
+    flex-direction: row;
+    
+}
+.faculty-wrapper-bottom img{
+    width: 7em;
+    height: 7em;
+    object-fit: cover;
+}
 
+.faculty-name-bottom{
+    font-size: var(--fs-smaller);
+    font-weight: 600;
+    margin-bottom: 0em;
+}
+.faculty-position-bottom{
+    font-size: var(--fs-double-smallest);
+    font-weight: 400;
+}
