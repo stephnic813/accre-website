@@ -343,8 +343,41 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     box-shadow: 7px 7px #314628;
 }
 
+.home > div:nth-child(4) {
+    height: 90dvh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    overflow: hidden;
+    padding: 0 3rem;
+    
+}
+
+.home > div:nth-child(4) .swiper-wrapper {
+    height: 100%;
+    /* width: 100dvw; */
+}
+
+.home > div:nth-child(4) .swiper-container {
+    display: flex;
+    width: 90dvw;
+    flex-direction: column;
+}
+
+.home > div:nth-child(4) .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 1500px;
+    height: 500px;
+}
 
 
+.home > div:nth-child(4) > p {
+    padding: 1rem 2rem 0 2rem;
+    margin: 0 !important;
+}
 
 
 
