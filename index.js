@@ -44,22 +44,7 @@ const collapseNav = function() {
   nav.classList.remove("nav-slide-in");
 };
 
-// Extension and Community Carousel
-var swiper = new Swiper('.swiper-container',{
-  pagination: '.swiper-pagination',
-  effect: 'coverflow',
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  coverflow:{
-    rotate:20,
-    stretch:0,
-    depth:200,
-    modifier:1,
-    slideShadows:true,
-  },
-  // loop:true,
-});
+
 
 async function fetchContents() {
   const response = await fetch('./extension-community.json')
