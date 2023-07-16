@@ -4,7 +4,7 @@ function scrollFunction() {
   if (scrollY > 1) {
     document.querySelector("header.header-home").style.height= "20vh";
     document.querySelector("header.header-home").style.flexDirection = "row";
-    document.querySelector(".home-arrow-down").style.display = "none";
+    document.querySelector(".home-arrow-down").style.visibility = "hidden";
     document.querySelector(".launch-main-images").style.display = "none";
     document.querySelector("header.header-home .launch-main-title").style.fontSize = "2.2em";
     document.querySelector("header.header-home .launch-main-course").style.fontSize = "1.75em";
@@ -12,7 +12,7 @@ function scrollFunction() {
   } else {
     document.querySelector("header.header-home").style.height= "100vh";
     document.querySelector("header.header-home").style.flexDirection = "column";
-    document.querySelector("header.header-home > .home-arrow-down").style.display = "block";
+    document.querySelector(".home-arrow-down").style.visibility = "visible";
     document.querySelector(".launch-main-images").style.display = "flex";
     document.querySelector("header.header-home .launch-main-title").style.fontSize = "3em";
     document.querySelector("header.header-home .launch-main-course").style.fontSize = "2.6em";
@@ -45,36 +45,9 @@ const collapseNav = function() {
 };
 
 
-
 async function fetchContents() {
   const response = await fetch('./extension-community.json')
   const fetchSlideshow = await response.json();
   console.log(fetchSlideshow)
 }
-
 fetchContents()
-
-//Perfomance-Graduates Carousel
-const swiperEl = document.querySelector('graduates-slider')
-    Object.assign(swiperEl, {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      pagination: {
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 50,
-        },
-      },
-    });
-swiperEl.initialize();
