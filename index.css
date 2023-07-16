@@ -493,12 +493,11 @@ header .launch-main-quote {
 
 /* Faculty Tab */
 .faculty-container-main{
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 2em 0;
+    padding: 2em 0;
     font-family: 'Poppins', sans-serif;
     width: 100%;
 }
@@ -510,7 +509,7 @@ header .launch-main-quote {
     display: grid;
     grid-template-columns: 30em 30em;
     gap: 2em;
-    margin: 1em 0;
+    padding: 1em 0;
     
 }
 .faculty-wrapper-top{
@@ -582,6 +581,17 @@ header .launch-main-quote {
 
 .background-two-template{
     background: url(images/Pscyh-Background-2.png);
+    height: 80dvh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-pscyh-two-auto{
+    background: url(images/Pscyh-Background-2.png);
     height: auto;
     width: 100%;
     -webkit-background-size: cover;
@@ -590,3 +600,4 @@ header .launch-main-quote {
     background-size: cover;
     background-repeat: no-repeat;
 }
+    
