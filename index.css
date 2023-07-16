@@ -123,12 +123,16 @@ ul, ol {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all ease-in-out 0.5s;
+   
 }
 .launch-image img{
     width: 12vh;
     margin: 1.7rem 1rem;
     height: auto;
     object-fit: cover;
+    transition: all ease-in-out 0.5s;
+    
 }
 
 /* .home{
@@ -409,7 +413,8 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     padding: 1rem 2rem 0 2rem;
     margin: 0 !important;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 .swiper-slide:nth-child(odd) {
     border: solid 8px #314528 !important ;
@@ -429,10 +434,13 @@ header {
     position: sticky;
     justify-content: space-between;
     transition: all ease-in-out 0.5s;
+    
 }
 
 header > button:last-child {
     visibility: hidden;
+    transition: all ease-in-out 0.5s; 
+    
 }
 
 header .launch-main-title {
