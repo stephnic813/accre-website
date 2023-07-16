@@ -432,7 +432,7 @@ header .launch-main-quote {
 
 /* Performance Graduates */
 .performance-graduates-main{
-    background: url(images/Pscyh-Background.png);
+    background: url(images/Pscyh-Background-2.png);
     height: 75dvh;
     width: 100%;
     -webkit-background-size: cover;
@@ -474,6 +474,7 @@ header .launch-main-quote {
 
 /* Faculty Tab */
 .faculty-container-main{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -549,8 +550,24 @@ header .launch-main-quote {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1em 0;
+    padding: 1em 0;
     font-family: 'Poppins', sans-serif;
     font-size: var(--fs-extra-large);
     font-weight: 700;
+}
+.pdf-file-iframe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-two-template{
+    background: url(images/Pscyh-Background-2.png);
+    height: auto;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
