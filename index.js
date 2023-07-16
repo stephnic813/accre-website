@@ -5,6 +5,7 @@ function scrollFunction() {
     document.querySelector("header.header-home").style.height= "20vh";
     document.querySelector("header.header-home").style.flexDirection = "row";
     document.querySelector(".home-arrow-down").style.display = "none";
+    document.querySelector(".launch-main-images").style.display = "none";
     document.querySelector("header.header-home .launch-main-title").style.fontSize = "2.2em";
     document.querySelector("header.header-home .launch-main-course").style.fontSize = "1.75em";
     document.querySelector("header.header-home .launch-main-quote").style.fontSize = "1.2em";
@@ -12,6 +13,7 @@ function scrollFunction() {
     document.querySelector("header.header-home").style.height= "100vh";
     document.querySelector("header.header-home").style.flexDirection = "column";
     document.querySelector("header.header-home > .home-arrow-down").style.display = "block";
+    document.querySelector(".launch-main-images").style.display = "flex";
     document.querySelector("header.header-home .launch-main-title").style.fontSize = "3em";
     document.querySelector("header.header-home .launch-main-course").style.fontSize = "2.6em";
     document.querySelector("header.header-home .launch-main-quote").style.fontSize = "2em";  
