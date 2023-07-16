@@ -376,6 +376,14 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     gap: 3rem;
     overflow: hidden;
     padding: 0 3rem;
+    background: url(images/Pscyh-Background-2.png);
+    height: 80dvh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
     
 }
 
@@ -401,9 +409,15 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     padding: 1rem 2rem 0 2rem;
     margin: 0 !important;
     text-align: center;
-    font-size: var(--fs-smallest);
+    font-size: 1.5rem;
+}
+.swiper-slide:nth-child(odd) {
+    border: solid 8px #314528 !important ;
 }
 
+.swiper-slide:nth-child(even) {
+    border: solid 8px #DBA729 !important ;
+}
 
 
 /* TEMPLATE HEADER */
