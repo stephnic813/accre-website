@@ -141,6 +141,15 @@ ul, ol {
     transition: all ease-in-out 0.5s;
    
 }
+
+.launch-main-welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+   
+}
+
 .launch-image img{
     width: 12vh;
     margin: 1.7rem 1rem;
