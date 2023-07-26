@@ -99,6 +99,13 @@ ul, ol {
     transition: all ease-in-out 0.5s;
     
 }
+
+.launch-welcome{
+    font-size: 3em;
+    font-family: 'Poppins', Times, serif;
+    transition: all ease-in-out 0.5s;
+}
+
 .launch-main-title{
     font-size: 3em;
     font-family: 'Times New Roman', Times, serif;
