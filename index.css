@@ -143,7 +143,7 @@ ul, ol {
 }
 
 .launch-main-welcome{
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     transition: all ease-in-out 0.5s;
