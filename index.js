@@ -6,6 +6,8 @@ function scrollFunction() {
     document.querySelector("header.header-home").style.flexDirection = "row";
     document.querySelector(".home-arrow-down").style.visibility = "hidden";
     document.querySelector(".launch-main-images").style.display = "none";
+    document.querySelector(".launch-welcome").style.visibility = "hidden";
+    document.querySelector(".launch-quote").style.visibility = "hidden";
     document.querySelector("header.header-home .launch-main-title").style.fontSize = "2.2em";
     document.querySelector("header.header-home .launch-main-course").style.fontSize = "1.75em";
     document.querySelector("header.header-home .launch-main-quote").style.fontSize = "1.2em";
@@ -14,6 +16,8 @@ function scrollFunction() {
     document.querySelector("header.header-home").style.flexDirection = "column";
     document.querySelector(".home-arrow-down").style.visibility = "visible";
     document.querySelector(".launch-main-images").style.display = "flex";
+    document.querySelector(".launch-welcome").style.visibility = "visible";
+    document.querySelector(".launch-quote").style.visibility = "visible";
     document.querySelector("header.header-home .launch-main-title").style.fontSize = "3em";
     document.querySelector("header.header-home .launch-main-course").style.fontSize = "2.6em";
     document.querySelector("header.header-home .launch-main-quote").style.fontSize = "2em";  
