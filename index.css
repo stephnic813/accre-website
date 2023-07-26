@@ -132,6 +132,7 @@ ul, ol {
     font-size: 2em;
     font-weight: 400;
     transition: all ease-in-out 0.5s;
+    display: block;
 }
 
 .launch-main-images{
