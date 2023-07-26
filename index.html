@@ -37,9 +37,9 @@
             </div>
             <br>
             <br>
-            <div class="launch-welcome">WELCOME AACCUP ACCREDITORS!!!</div>
+            <div class="launch-welcome" id="welcome">WELCOME AACCUP ACCREDITORS!!!</div>
             <br>
-            <div class="launch-main-quote">Scroll down to start</div>
+            <div class="launch-main-quote" id="scrollToStart">Scroll down to start</div>
         </div>
         <button class="launch-arrow"><i class="fa-solid fa-chevron-down home-arrow-down"></i></button>
     </header>
@@ -222,5 +222,28 @@
         </div>
     </main>
     <script src="index.js"></script>
+    <script>
+    // Function to handle the scroll event
+    window.addEventListener("scroll", function () {
+        // Get the distance of the passing rates section from the top of the page
+        const passingRatesSection = document.querySelector(".home");
+        const passingRatesSectionTop = passingRatesSection.getBoundingClientRect().top;
+
+        // Get the "Welcome" and "Scroll down" elements by their IDs
+        const welcomeElement = document.getElementById("welcome");
+        const scrollToStartElement = document.getElementById("scrollToStart");
+
+        // Check if the passing rates section is visible on the screen
+        if (passingRatesSectionTop < window.innerHeight / 2) {
+            // If the passing rates section is visible, hide the "Welcome" and "Scroll down" elements
+            welcomeElement.style.display = "none";
+            scrollToStartElement.style.display = "none";
+        } else {
+            // If the passing rates section is not visible, show the "Welcome" and "Scroll down" elements
+            welcomeElement.style.display = "block";
+            scrollToStartElement.style.display = "block";
+        }
+    });
+</script>
 </body>
 </html>
