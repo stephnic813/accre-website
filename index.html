@@ -26,10 +26,11 @@
     <header class="header-home">
         <button><i class="fa-solid fa-bars"></i></button>
         <div class="launch-main-container">
-            <div class="launch-main-title">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</div>
-            <div class="launch-main-course">COLLEGE OF SOCIAL SCIENCES AND DEVELOPMENT<br>
-                DEPARTMENT OF PSYCHOLOGY</div>
-            <div class="launch-main-quote">"Kaginhawaan para sa bawat mamamayan. Puso at Utak ang Puhunan."</div>
+            <div class="university-details" id="universityDetails">
+                <div class="launch-main-title">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</div>
+                <div class="launch-main-course">COLLEGE OF SOCIAL SCIENCES AND DEVELOPMENT<br>DEPARTMENT OF PSYCHOLOGY</div>
+                <div class="launch-main-quote">"Kaginhawaan para sa bawat mamamayan. Puso at Utak ang Puhunan."</div>
+            </div>
             <div class="launch-main-images">
                 <div class="launch-image"><img src="images/PUP_logo.png"></div>
                 <div class="launch-image"><img src="images/Tempo_logo.png"></div>
@@ -233,17 +234,24 @@
         const welcomeElement = document.getElementById("welcome");
         const scrollToStartElement = document.getElementById("scrollToStart");
 
+        // Get the container for the university details
+        const universityDetails = document.getElementById("universityDetails");
+
         // Check if the passing rates section is visible on the screen
         if (passingRatesSectionTop < window.innerHeight / 2) {
             // If the passing rates section is visible, hide the "Welcome" and "Scroll down" elements
             welcomeElement.style.display = "none";
             scrollToStartElement.style.display = "none";
+            // Show the university details container
+            universityDetails.style.display = "block";
         } else {
             // If the passing rates section is not visible, show the "Welcome" and "Scroll down" elements
             welcomeElement.style.display = "block";
             scrollToStartElement.style.display = "block";
+            // Hide the university details container
+            universityDetails.style.display = "none";
         }
     });
-</script>
+    </script>
 </body>
 </html>
