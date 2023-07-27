@@ -22,7 +22,7 @@
 .swiper-slide{
     background-position: center;
     background-size: cover;
-    width: 300px;
+    width: 800px;
     height: 300px;
     -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
 }
