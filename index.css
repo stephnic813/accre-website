@@ -764,13 +764,11 @@ header .launch-main-quote {
 
 .message > div:nth-child(1) > div:first-child {
     height: 70vh; /* Changed from 70dvh to 70vh */
-    width: 50vw; /* Changed from 130dvw to 130vw */
+    width: 30vw; /* Changed from 130dvw to 130vw */
 }
 
 .message > div:nth-child(1) > div:nth-child(2) {
     flex: 1; /* Added flex property to occupy remaining space */
-    padding: 1.5em;
-    border-radius: 10px;
     margin-left: 20px; /* Added left margin for space between divs */
     max-width: calc(50% - 20px); /* Adjusted max-width for better spacing */
 }
