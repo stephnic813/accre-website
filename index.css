@@ -732,6 +732,54 @@ header .launch-main-quote {
     text-align: left;
 }
 
+/*dean message*/
+.message {
+    display: flex;
+    flex-direction: column;
+}
+.message > div {
+    height: 100dvh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.message > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80dvh;
+    padding: 3rem;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./images/Pscyh-Background-2.png');
+}
+
+.message > div:nth-child(1) > div:first-child {
+    height: 70dvh;
+    width: 30dvw;
+}
+
+.message > div:nth-child(1) > div:nth-child(2) {
+    width: 60dvw;
+    font-size: var(--fs-smaller);
+    text-align: justify;
+}
+
+.message > div:nth-child(1) > div > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    border: solid 7px #800000;
+    box-shadow: 7px 7px #314628;
+}
 
 /* Performance Graduates */
 .performance-graduates-main{
