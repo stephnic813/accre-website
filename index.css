@@ -668,14 +668,22 @@ header .launch-main-quote {
 }
 
 /* Container for "The Bachelor of Science in Psychology is an undergraduate program" */
-.about-us-container {
-    max-width: 50%;
+.about-us {
+    max-width: 100%;
     height: 100%;
     padding: 2em;
     border-radius: 10px;
     margin-bottom: 2em;
     background: url('./images/Pscyh-Background.png');
     background-size: cover;
+}
+
+.about-us-container {
+    max-width: 50%;
+    height: 100%;
+    padding: 2em;
+    border-radius: 10px;
+    margin-bottom: 2em;
 }
 
 /* Side-by-side containers for "Program Learning Outcomes (PLO)" and "Program Objectives (PO)" */
