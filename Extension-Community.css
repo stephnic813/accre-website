@@ -26,7 +26,6 @@
     height: 300px;
     -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
 }
-
 .brochure-img{
     display: flex;
     justify-content: space-between;
@@ -37,8 +36,14 @@
     display: block;
     margin: 0 auto;
  }
-
- .brochure-desc {
+ .brochure-desc{
     text-align: center;
     margin: 30px 300px;
+ }
+ .slide-div{    
+    text-align: justify;
+    margin: 0 300px;
+ }
+ .slide-div h5{    
+    text-align: center;
  }
