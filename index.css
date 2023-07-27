@@ -761,6 +761,11 @@ header .launch-main-quote {
     background-image: url('./images/Pscyh-Background-2.png');
 }
 
+.message > div:nth-child(1) > div:first-child {
+    height: 70dvh;
+    width: 30dvw;
+}
+
 .message > div:nth-child(1) > div > img {
     object-fit: cover;
     height: 100%;
