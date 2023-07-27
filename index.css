@@ -732,7 +732,7 @@ header .launch-main-quote {
     text-align: left;
 }
 
-/*dean message*/
+/* Dean message */
 .message {
     display: flex;
     flex-direction: column;
@@ -747,30 +747,32 @@ header .launch-main-quote {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .message > div:nth-child(1) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80dvh;
+    height: 80vh; /* Changed from 80dvh to 80vh */
     padding: 3rem;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('./images/Pscyh-Background-2.png');
+    background-image: url('./images/Pscyh-Background.png');
 }
 
 .message > div:nth-child(1) > div:first-child {
-    height: 70dvh;
-    width: 130dvw;
+    height: 70vh; /* Changed from 70dvh to 70vh */
+    width: 130vw; /* Changed from 130dvw to 130vw */
 }
 
-.message > div:nth-child(1) > nth-child(2) {
+.message > div:nth-child(1) > div:nth-child(2) {
+    flex: 1; /* Added flex property to occupy remaining space */
     padding: 1.5em;
     border-radius: 10px;
-    margin: 10px;
-    max-width: 90%;
+    margin-left: 20px; /* Added left margin for space between divs */
+    max-width: calc(50% - 20px); /* Adjusted max-width for better spacing */
 }
 
 .message > div:nth-child(1) > div > img {
@@ -782,6 +784,7 @@ header .launch-main-quote {
     border: solid 7px #800000;
     box-shadow: 7px 7px #314628;
 }
+
 
 /* Performance Graduates */
 .performance-graduates-main{
