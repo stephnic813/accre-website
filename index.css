@@ -759,7 +759,7 @@ header .launch-main-quote {
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('./images/Pscyh-Background-2.png');
+    background-image: url('./images/Pscyh-Background.png');
 }
 
 .message > div:nth-child(1) > div:first-child {
@@ -769,8 +769,8 @@ header .launch-main-quote {
 
 .message > div:nth-child(1) > div:nth-child(2) {
     flex: 1; /* Added flex property to occupy remaining space */
-    margin-left: 20px; /* Added left margin for space between divs */
-    max-width: calc(50% - 20px); /* Adjusted max-width for better spacing */
+    margin-left: 5px; /* Added left margin for space between divs */
+    max-width: 90%; /* Adjusted max-width for better spacing */
 }
 
 .message > div:nth-child(1) > div > img {
