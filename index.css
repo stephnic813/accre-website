@@ -12,6 +12,20 @@
     --clr-text-contrast: #ffff;
 }
 
+.scrollable-list {
+  height: 100vh; /* Adjust the height as per your requirement */
+  overflow-y: auto; /* This will add a vertical scrollbar when needed */
+  /* Add any other styles you want for the list container */
+}
+
+/* Optional: Add some styling for the list items */
+.scrollable-list li {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+
+
 
 *{
     margin: 0;
