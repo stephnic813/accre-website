@@ -763,13 +763,13 @@ header .launch-main-quote {
 
 .message > div:nth-child(1) > div:first-child {
     height: 70dvh;
-    width: 150dvw;
+    width: 110dvw;
 }
 
-.message > div:nth-child(1) > div:nth-child(2) {
-    width: 100%;
-    font-size: var(--fs-smallest);
-    text-align: justify;
+.message > div:nth-child(1) > nth-child(2) {
+    padding: 1.5em;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 .message > div:nth-child(1) > div > img {
