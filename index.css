@@ -178,7 +178,7 @@ ul, ol {
 } */
 
 nav {
-    background-color: var(--clr-nav);
+    background-color: #000000d1;
     width: 30%;
     padding: 1rem;
     position: fixed;
