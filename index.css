@@ -670,7 +670,7 @@ header .launch-main-quote {
 
 /* Container for "The Bachelor of Science in Psychology is an undergraduate program" */
 .about-us-container {
-    max-width: 100%;
+    max-width: 70%;
     padding: 2em;
     background-color: white;
     border-radius: 10px;
