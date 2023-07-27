@@ -113,100 +113,58 @@
     
 
         <!-- start-->
-    <div class="extension-community-main">
-        <div class="compliance-report-container">
-            <div class="compliance-report-title">Extension and Community Involvement</div>
-            <div class="compliance-report-subtitle">Extension Partners</div>
-        </div>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" id="content-1" style="background-image: url(/images/Extension-Community/Image1.JPG)"></div>
-                <div class="swiper-slide" id="content-2"  style="background-image: url(/images/Extension-Community/Image2.JPG)"></div>
-                <div class="swiper-slide" id="content-3" style="background-image: url(/images/Extension-Community/Image3.JPG)"></div>
-                <div class="swiper-slide" id="content-4" style="background-image: url(/images/Extension-Community/Image4.JPG)"></div>
-                <div class="swiper-slide" id="content-5" style="background-image: url(/images/Extension-Community/Image5.JPG)"></div>
+        <div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(images/Extension-Community/Image6.JPG)">
+                        <div class="info">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/Extension-Community/Image7.jpg)">
+                        <div class="info">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/Extension-Community/Image8.jpg)">
+                        <div class="info">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/teaching-learning/Picture02)">
+                        <div class="info">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/teaching-learning/Picture03)">
+                        <div class="info">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/teaching-learning/Picture04)">
+                        <div class="info">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/teaching-learning/Picture05)">
+                        <div class="info">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/teaching-learning/Picture06)">
+                        <div class="info">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/teaching-learning/Picture07)">
+                        <div class="info">
+                        </div>
+                </div>
             </div>
-            <div class="swiper-pagination"></div>
         </div>
-        <div class="slide-div">
-            <h5 class="slide-content-title"><strong>The LEVEL-UP CIW (Correctional Institute for Women)</strong></h5>
-            <p class="slide-content">The Polytechnic University of the Philippines (PUP), through the Department of Psychology, signed a Memorandum of Understanding (MOU) with the Correctional Institution for Women (CIW), in response to its commitment to provide an array of extension programs and psychological services. Leading an Empowering Valuable Life: Uplifting and Protecting CIW extension initiative is part of the University's Life Skills Program (LSP), which provides psychological services to officials of institutions catering to the vulnerable sectors.</p>
+            
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    effect: 'coverflow',
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                });
+            </script>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container',{
-        pagination: '.swiper-pagination',
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflow:{
-            rotate:20,
-            stretch:0,
-            depth:200,
-            modifier:1,
-            slideShadows:true,
-        },
-        // loop:true,
-        });
-    </script>
-
-    <script>
-        const slideToContent = new Map();
-        const slides = document.querySelectorAll(".extension-community-main .swiper-slide");
-        let currentSlide = slides[0];
-        const slideTitle = document.querySelector(".slide-content-title");
-        const slideContent = document.querySelector(".slide-content");
-        let json;
-
-        caller();
-        // changeContents();
-
-
-        async function getJSON() {
-            return fetch('../extension-community.json')
-            .then((response)=>response.json())
-            .then((responseJson)=>{return responseJson});
-        }
-        
-        async function caller() {
-            json = await this.getJSON(); 
-
-            for (const slide of slides) {
-                slideToContent.set(slide.id, json[slide.id]);
-            }
-
-            const observer = new MutationObserver(function(mutations) {
-                mutations.forEach(function(mutationRecord) {
-                    checkSlideChange();
-                });    
-            });
-            const target = slides[0];
-            observer.observe(target, { attributes : true, attributeFilter : ['style'] });
-        }
-
-        function checkSlideChange() {
-            if (currentSlide.style.zIndex !== "1") {
-                for (const slide of slides) {
-                    if (slide.style.zIndex === "1") {
-                        currentSlide = slide;
-                        changeContents();
-                        break;
-                    }
-                }
-            }
-        }
-
-        function changeContents() {
-            // console.log(json[currentSlide.id]);
-            slideTitle.innerHTML = json[currentSlide.id]["title"];
-            slideContent.innerHTML = json[currentSlide.id]["content"];
-        }
-
-    </script>
-    <script src="../index.js"></script>
-
-    
 </body>
 </html>
