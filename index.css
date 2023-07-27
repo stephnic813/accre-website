@@ -674,6 +674,9 @@ header .launch-main-quote {
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .about-us-container {
@@ -681,6 +684,9 @@ header .launch-main-quote {
     padding: 2em;
     border-radius: 10px;
     margin-bottom: 2em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Side-by-side containers for "Program Learning Outcomes (PLO)" and "Program Objectives (PO)" */
@@ -691,7 +697,7 @@ header .launch-main-quote {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 90%;
+    max-width: 90%%;
 }
 
 /* Individual container for PLO and PO */
