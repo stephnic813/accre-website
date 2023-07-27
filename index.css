@@ -555,6 +555,26 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     font-size: 1.3rem;
     font-weight: 600;
 }
+
+
+.planning-home .swiper-wrapper {
+    height: 100%;
+}
+
+.planning-home .swiper-container {
+    display: flex;
+    width: 90dvw;
+    flex-direction: column;
+}
+
+.planning-home .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 1000px;
+    height: 500px;
+}
+
+
 .swiper-slide:nth-child(odd) {
     border: solid 8px #314528 !important ;
 }
@@ -562,6 +582,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 .swiper-slide:nth-child(even) {
     border: solid 8px #DBA729 !important ;
 }
+
 
 /* TEMPLATE HEADER */
 header {

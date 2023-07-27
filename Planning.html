@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Import Font Awesome -->
     <script src="https://kit.fontawesome.com/2fa58dfbff.js" crossorigin="anonymous"></script>
+    <!-- Import SwiperJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <!-- Import Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
@@ -105,12 +107,55 @@
             <a href="Documented-accreditors.html"><li><button><span><i class="fa-solid fa-folder-open"></i> Requested Documentation by Accreditors</span></button></li></a>
         </ul>
     </nav>
+    
+    <main class="planning-home">
+        
+        <!--start-->
+        <!-- <div class="background-two-template">
+            <h1 class="psych-title-main">Well-Developed Planning Processes</h1>
+            <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/0fc704ddae.html" style="border: 0px; width: 100%; height: 600px;"></iframe>
+        </div> -->
 
-    <!--start-->
-    <div class="background-two-template">
-        <h1 class="psych-title-main">Well-Developed Planning Processes</h1>
-        <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/0fc704ddae.html" style="border: 0px; width: 100%; height: 600px;"></iframe>
-    </div>
+        <div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(images/Extension-Community/Image6.JPG)">
+                        <div class="info">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/Extension-Community/Image7.jpg)">
+                        <div class="info">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/Extension-Community/Image8.jpg)">
+                        <div class="info">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/Extension-Community/Image9.jpg)">
+                        <div class="info">
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/Extension-Community/Image10.jpg)">
+                        <div class="info">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    effect: 'coverflow',
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                });
+            </script>
+        </div>
+    </main>
+
     
   
     <script src="index.js"></script>
