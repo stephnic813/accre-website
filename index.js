@@ -1,7 +1,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (scrollY > 1) {
+  if (scrollY > 0.5) {
     document.querySelector("header.header-home").style.height= "20vh";
     document.querySelector("header.header-home").style.flexDirection = "row";
     document.querySelector(".home-arrow-down").style.visibility = "hidden";
