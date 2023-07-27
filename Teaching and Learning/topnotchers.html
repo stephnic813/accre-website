@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extension Partners</title>
+    <title>Notable Graduates</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="../Teaching-Learning.css">
@@ -113,46 +113,102 @@
     
 
         <!-- start-->
-        <div>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image:url(images/teaching-learning/Picture02.png)">
-                        <div class="info">
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(images/teaching-learning/Picture03.png)">
-                        <div class="info">
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(images/teaching-learning/Picture04.png)">
-                        <div class="info">
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(images/teaching-learning/Picture05.png)">
-                        <div class="info">
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(images/teaching-learning/Picture06.png)">
-                        <div class="info">
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(images/teaching-learning/Picture07.png)">
-                        <div class="info">
-                        </div>
-                </div>
+    
+    <div class="extension-community-main">
+        <div class="compliance-report-container">
+            <div class="compliance-report-subtitle">NOTABLE GRADUATES</div>
+            <p class="slide-content">Here are the notable and successful graduates of the BS in Psychology program with their respective milestones. <br>These icons have continuously inspired students enrolled in the program to likewise excel and become successful in the future.</p>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="content-1" style="background-image: url(/images/teaching-learning/Picture02.png)"></div>
+                <div class="swiper-slide" id="content-2" style="background-image: url(/images/teaching-learning/Picture03.png)"></div>
+                <div class="swiper-slide" id="content-3" style="background-image: url(/images/teaching-learning/Picture04.png)"></div>
+                <div class="swiper-slide" id="content-4" style="background-image: url(/images/teaching-learning/Picture05.png)"></div>
+                <div class="swiper-slide" id="content-5" style="background-image: url(/images/teaching-learning/Picture06.png)"></div>
+                <div class="swiper-slide" id="content-6" style="background-image: url(/images/teaching-learning/Picture07.png)"></div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
-            
-            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <div class="slide-div">
+            <h5 class="slide-content-title"><strong>The LEVEL-UP CIW (Correctional Institute for Women)</strong></h5>
+            <p class="slide-content">Relevant to Teaching and learning, the Bachelor of Science in Psychology Program pledges to the University’s mission of offering industry-oriented curricula that produce highly-skilled professionals with managerial and technical capabilities, and a strong sense of public service for nation building; employees with a high level of professionalism; and establishing a presence in the international academic community. This is done through the utilization of inter and multidisciplinary approaches, and employing flexible learning modalities.</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container',{
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow:{
+            rotate:20,
+            stretch:0,
+            depth:200,
+            modifier:1,
+            slideShadows:true,
+        },
+        // loop:true,
+        });
+    </script>
 
-            <script>
-                var swiper = new Swiper('.swiper-container', {
-                    effect: 'coverflow',
-                    grabCursor: true,
-                    centeredSlides: true,
-                    slidesPerView: 'auto',
-                });
-            </script>
-        </div>
+    <script>
+        const slideToContent = new Map();
+        const slides = document.querySelectorAll(".extension-community-main .swiper-slide");
+        let currentSlide = slides[0];
+        const slideTitle = document.querySelector(".slide-content-title");
+        const slideContent = document.querySelector(".slide-content");
+        let json;
+
+        caller();
+        // changeContents();
+
+
+        async function getJSON() {
+            return fetch('../Teaching and Learning/tl-notable.json')
+            .then((response)=>response.json())
+            .then((responseJson)=>{return responseJson});
+        }
+        
+        async function caller() {
+            json = await this.getJSON(); 
+
+            for (const slide of slides) {
+                slideToContent.set(slide.id, json[slide.id]);
+            }
+
+            const observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutationRecord) {
+                    checkSlideChange();
+                });    
+            });
+            const target = slides[0];
+            observer.observe(target, { attributes : true, attributeFilter : ['style'] });
+        }
+
+        function checkSlideChange() {
+            if (currentSlide.style.zIndex !== "1") {
+                for (const slide of slides) {
+                    if (slide.style.zIndex === "1") {
+                        currentSlide = slide;
+                        changeContents();
+                        break;
+                    }
+                }
+            }
+        }
+
+        function changeContents() {
+            // console.log(json[currentSlide.id]);
+            slideTitle.innerHTML = json[currentSlide.id]["title"];
+            slideContent.innerHTML = json[currentSlide.id]["content"];
+        }
+
+    </script>
+    <script src="../index.js"></script>
+
+    
 </body>
 </html>
