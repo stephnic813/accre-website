@@ -749,10 +749,7 @@ header .launch-main-quote {
     flex: 0 0 200px; /* Set the width of the image */
     height: 200px; /* Set the height of the image */
     margin-right: 20px; /* Add some space between the image and message */
-    border-radius: 50%; /* To make the image circular, adjust size as needed */
-    overflow: hidden; /* Ensure the image stays within the rounded border */
-    border: solid 7px #800000;
-    box-shadow: 7px 7px #314628;
+    overflow: hidden; /* Ensure the image stays within its container */
 }
 
 .dean-picture img {
