@@ -419,6 +419,28 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 .home > div:nth-child(5) {
+    background-image: url(images/Global\ UGRAD\ Awardees-cropped.jpg);
+    display: flex;
+    flex-direction: column-reverse;
+    color: var(--clr-text-contrast);
+    text-align: center;
+    font-size: var(--fs-smaller);
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+}
+
+.home > div:nth-child(5) > hgroup {
+    padding: 0 3rem;
+}
+
+.home > div:nth-child(5) > hgroup > * {
+    padding-bottom: 3rem;
+}
+
+.home > div:nth-child(5) > hgroup > h3 {
+    font-size: var(--fs-large) !important;
+}
+
+.home > div:nth-child(6) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -432,18 +454,18 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     background-image: url('./images/Pscyh-Background.png');
 }
 
-.home > div:nth-child(5) > div:first-child {
+.home > div:nth-child(6) > div:first-child {
     height: 70dvh;
     width: 30dvw;
 }
 
-.home > div:nth-child(5) > div:nth-child(2) {
+.home > div:nth-child(6) > div:nth-child(2) {
     width: 60dvw;
     font-size: var(--fs-smaller);
     text-align: justify;
 }
 
-.home > div:nth-child(5) > div > img {
+.home > div:nth-child(6) > div > img {
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -451,49 +473,6 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     background-size: cover;
     border: solid 7px #800000;
     box-shadow: 7px 7px #314628;
-}
-
-.home > div:nth-child(6) {
-    background-image: url(images/Global\ UGRAD\ Awardees-cropped.jpg);
-    display: flex;
-    flex-direction: column-reverse;
-    color: var(--clr-text-contrast);
-    text-align: center;
-    font-size: var(--fs-smaller);
-    text-shadow: 2px 2px 0 rgb(0, 0, 0);
-}
-
-.home > div:nth-child(6) > hgroup {
-    padding: 0 3rem;
-}
-
-.home > div:nth-child(6) > hgroup > * {
-    padding-bottom: 3rem;
-}
-
-.home > div:nth-child(6) > hgroup > h3 {
-    font-size: var(--fs-large) !important;
-}
-
-
-.home > div:nth-child(7) {
-    height: 90dvh;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-    overflow: hidden;
-    padding: 0 3rem;
-    background: url(images/Pscyh-Background-2.png);
-    height: 80dvh;
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
 }
 
 .home > div:nth-child(7) .swiper-wrapper {
