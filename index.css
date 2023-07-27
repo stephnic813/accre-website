@@ -652,14 +652,13 @@ header .launch-main-quote {
 
 /* About Us */
 .about-us-main {
-    background: url('./images/Pscyh-Background.png');
     height: 100%;
     width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -674,14 +673,16 @@ header .launch-main-quote {
     padding: 2em;
     border-radius: 10px;
     margin-bottom: 2em;
+    background: url('./images/Pscyh-Background.png');
 }
 
 /* Side-by-side containers for "Program Learning Outcomes (PLO)" and "Program Objectives (PO)" */
 .about-us-mission-vision-container {
+    background: url('./images/Pscyh-Background-2.png');
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 70%;
+    max-width: 90%%;
 }
 
 /* Individual container for PLO and PO */
