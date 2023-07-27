@@ -769,7 +769,7 @@ header .launch-main-quote {
 
 .message > div:nth-child(1) > div:nth-child(2) {
     flex: 1; /* Added flex property to occupy remaining space */
-    margin-left: 5px; /* Added left margin for space between divs */
+    margin-left: 20px; /* Added left margin for space between divs */
     max-width: 90%; /* Adjusted max-width for better spacing */
 }
 
