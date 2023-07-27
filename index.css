@@ -736,11 +736,10 @@ header .launch-main-quote {
 .message {
     display: flex;
     flex-direction: column;
-    background: url('./images/Pscyh-Background-2.png');
 }
 
 .message > div {
-    height: 100dvh;
+    height: 100%;
     width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -759,18 +758,7 @@ header .launch-main-quote {
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('./images/Pscyh-Background.png');
-}
-
-.message > div:nth-child(1) > div:first-child {
-    height: 70dvh;
-    width: 30dvw;
-}
-
-.message > div:nth-child(1) > div:nth-child(2) {
-    width: 60dvw;
-    font-size: var(--fs-smaller);
-    text-align: justify;
+    background-image: url('./images/Pscyh-Background-2.png');
 }
 
 .message > div:nth-child(1) > div > img {
