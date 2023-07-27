@@ -669,13 +669,15 @@ header .launch-main-quote {
 
 /* Container for "The Bachelor of Science in Psychology is an undergraduate program" */
 .about-us {
+    height: 100%;
     background: url('./images/Pscyh-Background.png');
     background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .about-us-container {
     max-width: 50%;
-    height: 100%;
     padding: 2em;
     border-radius: 10px;
     margin-bottom: 2em;
@@ -689,7 +691,7 @@ header .launch-main-quote {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 90%%;
+    max-width: 90%;
 }
 
 /* Individual container for PLO and PO */
