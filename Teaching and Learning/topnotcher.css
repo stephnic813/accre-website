@@ -1,1 +1,49 @@
-
+/* topnotcher */
+.extension-community-main{
+    height: 100dvh;
+    margin: 0;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+.extension-community-title{
+    font-size: var(--fs-large);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
+}
+.swiper-container{
+    width: 100dvw;
+    padding-top: 2em ;
+    padding-bottom: 8em;
+}
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 1000px;
+    height: 300px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
+}
+.brochure-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brochure-img img{
+    max-width: 47%;
+    display: block;
+    margin: 0 auto;
+ }
+ .brochure-desc{
+    text-align: center;
+    margin: 30px 300px;
+ }
+ .slide-div{    
+    text-align: justify;
+    margin: 0 300px;
+ }
+ .slide-div h5{    
+    text-align: center;
+ }
