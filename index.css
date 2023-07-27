@@ -680,6 +680,7 @@ header .launch-main-quote {
 .about-us-details{
     font-weight: 500;
     font-size: var(--fs-smallest);
+    text-align: left;
 }
 
 /* Performance Graduates */
