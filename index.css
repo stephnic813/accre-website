@@ -659,7 +659,7 @@ header .launch-main-quote {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -670,7 +670,7 @@ header .launch-main-quote {
 
 /* Container for "The Bachelor of Science in Psychology is an undergraduate program" */
 .about-us-container {
-    max-width: 800px;
+    max-width: 100%;
     padding: 2em;
     background-color: white;
     border-radius: 10px;
