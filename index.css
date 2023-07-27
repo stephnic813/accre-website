@@ -432,12 +432,12 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     background-image: url('./images/Pscyh-Background.png');
 }
 
-.home > div:nth-child(5) > div:first-child {
+.home > div:nth-child(5) > div:nth-child(2) {
     height: 70dvh;
     width: 30dvw;
 }
 
-.home > div:nth-child(5) > div:nth-child(2) {
+.home > div:nth-child(5) > div:first-child {
     width: 60dvw;
     font-size: var(--fs-smaller);
     text-align: justify;
@@ -510,6 +510,26 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     box-shadow: 7px 7px #314628;
 }
 
+.home > div:nth-child(8) {
+    height: 90dvh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    overflow: hidden;
+    padding: 0 3rem;
+    background: url(images/Pscyh-Background-2.png);
+    height: 80dvh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
 .home > div:nth-child(8) .swiper-wrapper {
     height: 100%;
 }
@@ -542,7 +562,6 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 .swiper-slide:nth-child(even) {
     border: solid 8px #DBA729 !important ;
 }
-
 
 /* TEMPLATE HEADER */
 header {
