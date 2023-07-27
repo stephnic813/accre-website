@@ -732,53 +732,40 @@ header .launch-main-quote {
     text-align: left;
 }
 
-/*dean message*/
+/* Dean message */
 .message {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    background: url('./images/Pscyh-Background-2.png');
 }
-.message > div {
-    height: 100dvh;
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.message > div:nth-child(1) {
+
+.dean-info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 80dvh;
-    padding: 3rem;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('./images/Pscyh-Background-2.png');
+    max-width: 800px;
 }
 
-.message > div:nth-child(1) > div:first-child {
-    height: 70dvh;
-    width: 30dvw;
-}
-
-.message > div:nth-child(1) > div:nth-child(2) {
-    width: 60dvw;
-    font-size: var(--fs-smaller);
-    text-align: justify;
-}
-
-.message > div:nth-child(1) > div > img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background-size: cover;
+.dean-picture {
+    flex: 0 0 200px; /* Set the width of the image */
+    height: 200px; /* Set the height of the image */
+    margin-right: 20px; /* Add some space between the image and message */
+    border-radius: 50%; /* To make the image circular, adjust size as needed */
+    overflow: hidden; /* Ensure the image stays within the rounded border */
     border: solid 7px #800000;
     box-shadow: 7px 7px #314628;
+}
+
+.dean-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dean-message {
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-smaller);
+    text-align: justify;
 }
 
 /* Performance Graduates */
