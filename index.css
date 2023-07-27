@@ -653,7 +653,7 @@ header .launch-main-quote {
 /* About Us */
 .about-us-main{
     background: url('./images/Pscyh-Background.png');
-    height: 80dvh;
+    height: 100%;
     width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -680,8 +680,13 @@ header .launch-main-quote {
 .about-us-details{
     font-weight: 500;
     font-size: var(--fs-smallest);
+}
+.about-us-leftalign{
+    font-weight: 500;
+    font-size: var(--fs-smallest);
     text-align: left;
 }
+
 
 /* Performance Graduates */
 .performance-graduates-main{
