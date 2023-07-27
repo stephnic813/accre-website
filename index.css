@@ -759,12 +759,12 @@ header .launch-main-quote {
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('./images/Pscyh-Background.png');
+    background-image: url('./images/Pscyh-Background-2.png');
 }
 
 .message > div:nth-child(1) > div:first-child {
     height: 70vh; /* Changed from 70dvh to 70vh */
-    width: 30vw; /* Changed from 130dvw to 130vw */
+    width: 25vw; /* Changed from 130dvw to 130vw */
 }
 
 .message > div:nth-child(1) > div:nth-child(2) {
