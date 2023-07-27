@@ -763,7 +763,7 @@ header .launch-main-quote {
 
 .message > div:nth-child(1) > div:first-child {
     height: 70dvh;
-    width: 30dvw;
+    width: 50dvw;
 }
 
 .message > div:nth-child(1) > div > img {
