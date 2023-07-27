@@ -651,7 +651,7 @@ header .launch-main-quote {
 
 
 /* About Us */
-.about-us-main{
+.about-us-main {
     background: url('./images/Pscyh-Background.png');
     height: 100%;
     width: 100%;
@@ -661,17 +661,48 @@ header .launch-main-quote {
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    
 }
-.about-us-vision{
-    padding-top: 3em ;
+
+/* Container for "The Bachelor of Science in Psychology is an undergraduate program" */
+.about-us-container {
+    max-width: 800px;
+    padding: 2em;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 2em;
 }
-.about-us-container, .about-us-mission-vision-container{
-    margin: 0 5em;
+
+/* Side-by-side containers for "Program Learning Outcomes (PLO)" and "Program Objectives (PO)" */
+.about-us-mission-vision-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+/* Individual container for PLO and PO */
+.about-us-mission-vision-item {
+    flex-basis: calc(50% - 20px);
+    padding: 1.5em;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Additional styles for the content within the containers */
+.about-us-mission-vision-item h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.about-us-mission-vision-item ol {
+    margin-top: 0;
+    padding-left: 20px;
 }
 .about-us-title{
     font-weight: 700;
