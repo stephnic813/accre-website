@@ -682,7 +682,7 @@ header .launch-main-quote {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 90%%;
+    max-width: 90%;
 }
 
 /* Individual container for PLO and PO */

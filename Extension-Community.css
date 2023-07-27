@@ -26,3 +26,19 @@
     height: 300px;
     -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
 }
+
+.brochure-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brochure-img img{
+    max-width: 47%;
+    display: block;
+    margin: 0 auto;
+ }
+
+ .brochure-desc {
+    text-align: center;
+    margin: 30px 300px;
+ }
