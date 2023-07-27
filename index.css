@@ -353,7 +353,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 .home > div:nth-child(2) {
-    background-image: url(image/Extension-Community/Image17.JPG);
+    background-image: url(images/Extension-Community/Image17.JPG);
     display: flex;
     flex-direction: column-reverse;
     color: var(--clr-text-contrast);
@@ -410,7 +410,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 .home > div:nth-child(4) {
-    background-image: url(image/Extension-Community/Image19.JPG);
+    background-image: url(images/Extension-Community/Image19.JPG);
     display: flex;
     flex-direction: column-reverse;
     color: var(--clr-text-contrast);
