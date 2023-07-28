@@ -798,7 +798,8 @@ header .launch-main-quote {
 /* Show horizontal borders for all cells */
 .horizontal-lines-table th,
 .horizontal-lines-table td {
-  border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 8px; /* Adjust the padding value as needed */
 }
 
 /* Performance Graduates */
