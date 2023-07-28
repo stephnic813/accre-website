@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psychology Accreditation Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Extension-Community.css">
     <!-- Import Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -107,10 +109,113 @@
     </nav>
 
     <!--start-->
-    <div class="background-two-template">
-        <h1 class="psych-title-main">International Linkages</h1>
-    <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/3f77cdcf6b.html" style="border: 0px; width: 100%; height: 600px;"></iframe>
+    <div class="extension-community-main">
+        <div class="compliance-report-container">
+            <h1 class="linkages-title">International Linkages</h1>
+            <p class="linkages-subtitle">Anchored in Pillar 7 – Global Academic Standards and Excellence, to support its vision 
+                of becoming a National Polytechnic University (NPU), the Polytechnic University of the Philippines recognizes the need 
+                Building networks and partnerships across the globe unlock the world of opportunities for our Iskolar ng Bayan. With its aim to be 
+                globally renowned, and academically inclined to international standards, the PUP Department of Psychology commits itself to becoming a
+                 global brand in the academe with the initiatives of the Office of International Affairs. 
+            </p>
+         
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="content-1" style="background-image: url(/images/Extension-Community/Image1.JPG)"></div>
+                <div class="swiper-slide" id="content-2"  style="background-image: url(/images/Extension-Community/Image2.JPG)"></div>
+                <div class="swiper-slide" id="content-3" style="background-image: url(/images/Extension-Community/Image3.JPG)"></div>
+                <div class="swiper-slide" id="content-4" style="background-image: url(/images/Extension-Community/Image4.JPG)"></div>
+                <div class="swiper-slide" id="content-5" style="background-image: url(/images/Extension-Community/Image5.JPG)"></div>
+                <div class="swiper-slide" id="content-6" style="background-image: url(/images/Extension-Community/Image5.JPG)"></div>
+                <div class="swiper-slide" id="content-7" style="background-image: url(/images/Extension-Community/Image5.JPG)"></div>
+                <div class="swiper-slide" id="content-8" style="background-image: url(/images/Extension-Community/Image5.JPG)"></div>
+                <div class="swiper-slide" id="content-9" style="background-image: url(/images/Extension-Community/Image5.JPG)"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="slide-div">
+            <h5 class="slide-content-title"><strong></strong></h5>
+            <p class="slide-content">The Memorandum of Agreement was signed by the Polytechnic University of the Philippines (PUP) officials and Abo Akademi 
+                University representative Dr. Peter Nynas. It was attended by the Dean of the College of Social Sciences and Development, Dr. Raul Roland Sebastian. 
+                Department of Psychology Chair Asst. Prof. Lorraine Charmayne Manansala- Enriquez, Chairpersons from CSSD and The Office of International Affairs Officials.
+            </p>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container',{
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow:{
+            rotate:20,
+            stretch:0,
+            depth:200,
+            modifier:1,
+            slideShadows:true,
+        },
+        // loop:true,
+        });
+    </script>
+
+    <script>
+        const slideToContent = new Map();
+        const slides = document.querySelectorAll(".extension-community-main .swiper-slide");
+        let currentSlide = slides[0];
+        const slideTitle = document.querySelector(".slide-content-title");
+        const slideContent = document.querySelector(".slide-content");
+        let json;
+
+        caller();
+        // changeContents();
+
+
+        async function getJSON() {
+            return fetch('international-linkages.json')
+            .then((response)=>response.json())
+            .then((responseJson)=>{return responseJson});
+        }
+        
+        async function caller() {
+            json = await this.getJSON(); 
+
+            for (const slide of slides) {
+                slideToContent.set(slide.id, json[slide.id]);
+            }
+
+            const observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutationRecord) {
+                    checkSlideChange();
+                });    
+            });
+            const target = slides[0];
+            observer.observe(target, { attributes : true, attributeFilter : ['style'] });
+        }
+
+        function checkSlideChange() {
+            if (currentSlide.style.zIndex !== "1") {
+                for (const slide of slides) {
+                    if (slide.style.zIndex === "1") {
+                        currentSlide = slide;
+                        changeContents();
+                        break;
+                    }
+                }
+            }
+        }
+
+        function changeContents() {
+            // console.log(json[currentSlide.id]);
+            slideTitle.innerHTML = json[currentSlide.id]["title"];
+            slideContent.innerHTML = json[currentSlide.id]["content"];
+        }
+
+    </script>
+    <script src="../index.js"></script>
+    
     
   
     <script src="index.js"></script>

@@ -969,6 +969,29 @@ header .launch-main-quote {
   height: 100%;
 }
 
+/* International Linkages */
+.linkages-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-extra-large);
+    font-weight: 700;
+}
+.linkages-subtitle{
+    font-size: 1em;
+    margin: 0 20em;
+}
+
+/* Carousel Format */
+.slide-content-title{
+    font-weight: 700;
+}
+.slide-content{
+    text-align: center;
+}
+
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
   .video-container {
