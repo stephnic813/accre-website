@@ -783,6 +783,23 @@ header .launch-main-quote {
     box-shadow: 7px 7px #314628;
 }
 
+/* Apply styles to the whole table */
+.horizontal-lines-table {
+  border-collapse: collapse; /* Optional: This removes spacing between table cells */
+}
+
+/* Hide vertical borders for all cells */
+.horizontal-lines-table th,
+.horizontal-lines-table td {
+  border-left: none;
+  border-right: none;
+}
+
+/* Show horizontal borders for all cells */
+.horizontal-lines-table th,
+.horizontal-lines-table td {
+  border-bottom: 1px solid black;
+}
 
 /* Performance Graduates */
 .performance-graduates-main{
