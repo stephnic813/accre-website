@@ -886,6 +886,7 @@ header {
     position: sticky;
     justify-content: space-between;
     transition: all ease-in-out 0.5s;
+    /* font-size: 3rem; */
     
 }
 
@@ -896,15 +897,15 @@ header > button:last-child {
 }
 
 header .launch-main-title {
-    font-size: 2.2em;
+    font-size: 2em;
 }
 
 header .launch-main-course {
-    font-size: 1.75em;
+    font-size: 1.5em;
 }
 
 header .launch-main-quote {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 
