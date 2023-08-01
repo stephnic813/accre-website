@@ -10,15 +10,12 @@
     overflow: hidden;
 }
 .research-main-title{
+    margin-top: 0.5em;
     font-size: 4em;
     font-family: 'Poppins', sans-serif;
     font-weight: 700; 
 }
-.research-title{
-    font-size: var(--fs-large);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700; 
-}
+
 .swiper-container{
     width: 100dvw;
     padding-top: 2em ;

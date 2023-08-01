@@ -1,8 +1,8 @@
-/* Teaching-Learning */
+/* topnotcher */
 .extension-community-main{
-    min-height: 100dvh;
+
     margin: 0;
-    padding-top: 2em;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -16,15 +16,20 @@
 }
 .swiper-container{
     width: 100dvw;
-    padding-top: 2em ;
-    padding-bottom: 8em;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+.notable-container{
+    width: 100dvw;
+    padding-top: 1em;
+    padding-bottom: 2em;
+   
 }
 .swiper-slide{
     background-position: center;
     background-size: cover;
-    width: 1000px;
-    height: 500px;
-
+    width: 700px;
+    height: 430px;
 }
 .brochure-img{
     display: flex;
@@ -43,7 +48,12 @@
  .slide-div{    
     text-align: justify;
     margin: 0 300px;
+    margin-bottom: 3em;
+    height: 50vh;
+  
+   
  }
- .slide-div h5{    
+ .slide-div p{   
+    font-size: 1.2em; 
     text-align: center;
  }
