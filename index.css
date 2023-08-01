@@ -323,17 +323,13 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     color: #ffff;
     text-shadow: 5px 1px 5px black;
 }
-.home-container-national-one, .home-container-national-three{
+.home-container-national-one,.home-container-national-two, .home-container-national-three{
     font-size: 0.9em;
     font-weight: 700;
     color: #ffff;
     text-shadow: 5px 1px 5px black;
 }
-.home-container-national-two{
-    font-weight: 700;
-    color: #ffff;
-    text-shadow: 5px 1px 5px black;
-}
+
 
 .home-main-images{
     display: flex;
