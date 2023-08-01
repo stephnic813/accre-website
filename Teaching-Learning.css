@@ -75,3 +75,87 @@
     
     text-align: center;
  }
+
+/* TeachPage */
+.teach {
+    display: flex;
+    flex-direction: column;
+}
+.teach > div {
+    height: 100dvh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.teach-main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
+.teach-container-passingrate-one,.teach-container-passingrate-three, .teach-container-percentage-two{
+    padding-top: 10rem;
+}
+
+.teach-container-percentage-one, .teach-container-percentage-three{
+    text-shadow: 5px 1px #f2ca3e;
+    font-size: 6em;
+    font-weight: 700;
+    color: #800000;
+}
+.teach-container-details-one, .teach-container-details-three{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ffff;
+    text-shadow: 5px 1px 5px black;
+}
+.teach-container-national-one, .teach-container-national-three{
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #ffff;
+    text-shadow: 5px 1px 5px black;
+}
+.teach-container-percentage-two{
+    font-size: 6em;
+    text-shadow: 5px 1px #f2ca3e;
+    font-weight: 700;
+    color: #800000;
+}
+.teach-container-details-two{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ffff;
+    text-shadow: 5px 1px 5px black;
+}
+.teach-container-national-two{
+    font-weight: 700;
+    color: #ffff;
+    text-shadow: 5px 1px 5px black;
+}
+
+.teach-main-images{
+    display: flex;
+    justify-content: flex-end;
+    /* margin-top: 5rem; */
+    /* margin-right: 17rem; */
+    margin-top: 5rem;
+    padding-right: 5rem;
+}
+
+.teach-image img{
+    width:  12vh;
+    margin: 0 0.5rem;
+    height: auto;
+    object-fit: cover;
+}
+
+.teach > div:nth-child(1) {
+    background-image: url(images/Home_background.jpg);
+}
+
