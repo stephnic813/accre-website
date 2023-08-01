@@ -14,6 +14,10 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 600; 
 }
+.linkages-semi-title{
+    font-size: 2em;
+    font-weight: 600;
+}
 .swiper-container{
     width: 100dvw;
     padding-bottom: 4em;
