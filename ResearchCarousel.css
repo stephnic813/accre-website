@@ -22,7 +22,8 @@
     font-weight: 700; 
 }
 .swiper-container{
-    width: 100dvw;
+    width: 100%;
+    overflow: hidden;
     padding-top: 2em ;
     padding-bottom: 2em;
 }
