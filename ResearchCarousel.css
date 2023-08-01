@@ -1,0 +1,45 @@
+/* topnotcher */
+.extension-community-main{
+    min-height: 100dvh;
+    margin: 0;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+.research-main-title{
+    font-size: 4em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; 
+}
+.research-title{
+    font-size: var(--fs-large);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; 
+}
+.swiper-container{
+    width: 100dvw;
+    padding-top: 2em ;
+    padding-bottom: 2em;
+}
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 700px;
+    height: 380px;
+
+}
+ .slide-div{    
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 250px;
+   
+ }
+ .slide-content{    
+   font-size: 1.3em;
+   margin-bottom: 2em;
+ }
