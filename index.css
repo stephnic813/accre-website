@@ -304,7 +304,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     width: 100%;
 }
 
-.home-container-passingrate-one,.home-container-passingrate-three, .home-container-percentage-two{
+.home-container-passingrate-one,.home-container-passingrate-three, .home-container-passingrate-two{
     border-radius: 25px;
     margin-top: 10rem;
     padding: 25px;
