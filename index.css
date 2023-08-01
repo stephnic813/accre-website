@@ -86,6 +86,9 @@ header:after{
   .message{
     font-size: 67%;
   }
+.home-container-passingrate-one,.home-container-passingrate-three, .home-container-percentage-two{
+    padding-top: 10rem;
+}
 }
 
 header > button {
