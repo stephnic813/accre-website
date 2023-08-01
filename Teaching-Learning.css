@@ -24,7 +24,7 @@
     background-size: cover;
     width: 1000px;
     height: 500px;
-    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
+ 
 }
 .brochure-img{
     display: flex;

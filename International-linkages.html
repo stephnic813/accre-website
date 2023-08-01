@@ -6,7 +6,7 @@
     <title>Psychology Accreditation Website</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="Extension-Community.css">
+    <link rel="stylesheet" href="Carousel-noShadow.css">
     <!-- Import Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </head>
 <body>
-
+   
     <!-- Launch Site -->
     <header>
         <button><i class="fa-solid fa-bars"></i></button>
@@ -59,7 +59,8 @@
             <a href="Teaching-and-Learning.html"><li><button><span><i class="fa-solid fa-book"></i> Teaching and Learning</button></span></li></a>
             <a href="Extension-Community.html"><li><button><span><i class="fa-solid fa-book"></i> Extension and Community Involvement</button></span></li></a>
             <a href="International-linkages.html"><li><button><span><i class="fa-solid fa-group-arrows-rotate"></i> International Linkages and Consortia</span></button></li></a>
-            <a href="Planning.html"><li><button><span><i class="fa-solid fa-book"></i>Well-Developed Planning Process</button></span></li></a>            
+            <a href="Planning.html"><li><button><span><i class="fa-solid fa-book"></i>Well-Developed Planning Process</button></span></li></a>           
+ 
             <li>
                 <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#compliance-report-collapse" aria-expanded="false">
                     <span><i class="fa-solid fa-circle-check"></i> Compliance Report</span>
@@ -78,7 +79,7 @@
 
     <!--start-->
     <div class="extension-community-main">
-        <div class="compliance-report-container">
+        <div class="linkages-container">
             <h1 class="linkages-title">International Linkages</h1>
             <p class="linkages-subtitle">Anchored in Pillar 7 – Global Academic Standards and Excellence, to support its vision 
                 of becoming a National Polytechnic University (NPU), the Polytechnic University of the Philippines recognizes the need 
@@ -123,7 +124,7 @@
             stretch:0,
             depth:200,
             modifier:1,
-            slideShadows:true,
+            slideShadows:false,
         },
         // loop:true,
         });

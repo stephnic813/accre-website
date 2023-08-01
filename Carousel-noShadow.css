@@ -1,4 +1,4 @@
-/* topnotcher */
+/* Extension and Community */
 .extension-community-main{
     min-height: 100dvh;
     margin: 0;
@@ -22,25 +22,10 @@
 .swiper-slide{
     background-position: center;
     background-size: cover;
-    width: 1000px;
-    height: 500px;
-
+    width: 600px; /* Set a fixed width */
+     height: 338px;
 }
-.brochure-img{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.brochure-img img{
-    max-width: 47%;
-    display: block;
-    margin: 0 auto;
- }
- .brochure-desc{
-    text-align: center;
-    margin: 30px 300px;
- }
- .slide-div{    
+.slide-div{    
     text-align: justify;
     margin: 0 300px;
  }
