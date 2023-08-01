@@ -311,13 +311,13 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.home-container-percentage-one, .home-container-percentage-three{
+.home-container-percentage-one, .home-container-percentage-three, .home-container-percentage-two{
     text-shadow: 5px 1px #f2ca3e;
     font-size: 6em;
     font-weight: 700;
     color: #800000;
 }
-.home-container-details-one, .home-container-details-three{
+.home-container-details-one,.home-container-details-two, .home-container-details-three{
     font-size: 1.5em;
     font-weight: 700;
     color: #ffff;
@@ -325,18 +325,6 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 .home-container-national-one, .home-container-national-three{
     font-size: 0.9em;
-    font-weight: 700;
-    color: #ffff;
-    text-shadow: 5px 1px 5px black;
-}
-.home-container-percentage-two{
-    font-size: 6em;
-    text-shadow: 5px 1px #f2ca3e;
-    font-weight: 700;
-    color: #800000;
-}
-.home-container-details-two{
-    font-size: 1.5em;
     font-weight: 700;
     color: #ffff;
     text-shadow: 5px 1px 5px black;
