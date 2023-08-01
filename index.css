@@ -388,7 +388,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 
 .home > div:nth-child(1) > div:nth-child(2) {
     width: 60dvw;
-    font-size: var(--fs-smaller);
+    font-size: var(--fs-double-smallest);
     text-align: justify;
 }
 
