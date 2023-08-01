@@ -557,7 +557,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     box-shadow: 7px 7px #314628;
 }*/
 
-.home > div:nth-child(8) {
+.home > div:nth-child(4) {
     height: 90dvh;
     align-items: center;
     display: flex;
@@ -577,17 +577,17 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     
 }
 
-.home > div:nth-child(8) .swiper-wrapper {
+.home > div:nth-child(4) .swiper-wrapper {
     height: 100%;
 }
 
-.home > div:nth-child(8) .swiper-container {
+.home > div:nth-child(4) .swiper-container {
     display: flex;
     width: 90dvw;
     flex-direction: column;
 }
 
-.home > div:nth-child(8) .swiper-slide {
+.home > div:nth-child(4) .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 1000px;
@@ -595,7 +595,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 
-.home > div:nth-child(8) > p {
+.home > div:nth-child(4) > p {
     padding: 1rem 2rem 0 2rem;
     margin: 0 !important;
     text-align: center;
