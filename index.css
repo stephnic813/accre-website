@@ -457,7 +457,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 .home > div:nth-child(3) {
     background-image: url('./images/jobstreet1.JPG');
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     color: var(--clr-text-contrast);
     text-align: center;
     font-size: var(--fs-smaller);
