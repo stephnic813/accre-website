@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psychology Accreditation Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="topnotcher.css">
+
     <!-- Import Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,56 +79,128 @@
         </ul>
     </nav>
     
-    <main class="planning-home">
+    <!-- Start of Introduction -->
+    <div class="compliance-report-container">
+        <div class="compliance-report-subtitle">Introduction</div>
+    </div>
+ 
+    <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/50fcb065fa.html" style="border: 1px solid lightgray; width: 100%; height: 600px;"></iframe>
+     <!-- End of Introduction -->
+
+    <!-- Start of Certificate -->
+     <div class="compliance-report-container">
+        <div class="compliance-report-subtitle">SOCOTEC Certificate and QAC</div>
+    </div>
+    <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/089f725299.html" style="border: 1px solid lightgray; width: 100%; height: 600px;"></iframe>
+    <!-- End of Certificate -->
+
+    <!-- Start of CSSD -->
+    <div class="compliance-report-container">
+        <div class="compliance-report-subtitle">CSSD</div>
+    </div>
+    <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/5905f974ea.html" style="border: 1px solid lightgray; width: 100%; height: 600px;"></iframe>
+    <!-- End of CSSD -->
+
+    <!-- Start of BS-Planning -->
+    <div class="compliance-report-container">
+        <div class="compliance-report-subtitle">Bachelor of Science in Psychology Dev Plan</div>
+    </div>
+    <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/a4848c13e6.html" style="border: 1px solid lightgray; width: 100%; height: 600px;"></iframe>
+    <!-- End of BS-Planning -->
+
+    <!-- Start of Strategy Planning -->
+    <div class="compliance-report-container">
+        <div class="compliance-report-subtitle">Strategy Planning</div>
+    </div>
+
+    <!-- Script for Strategy Planning -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(../images/teaching-learning/Picture02.jpg)"></div>
+            <div class="swiper-slide" style="background-image: url(../images/teaching-learning/Picture03.jpg)"></div>
+            <div class="swiper-slide" style="background-image: url(../images/teaching-learning/Picture04.jpg)"></div>
+            <div class="swiper-slide" style="background-image: url(../images/teaching-learning/Picture05.jpg)"></div>
+            <div class="swiper-slide" style="background-image: url(../images/teaching-learning/Picture06.jpg)"></div>
+            <div class="swiper-slide" style="background-image: url(../images/teaching-learning/Picture07.jpg)"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container',{
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow:{
+            rotate:20,
+            stretch:0,
+            depth:200,
+            modifier:1,
+            slideShadows:true,
+        },
+        // loop:true,
+        });
+    </script>
+
+    <script>
+        const slideToContent = new Map();
+        const slides = document.querySelectorAll(".extension-community-main .swiper-slide");
+        let currentSlide = slides[0];
+        const slideTitle = document.querySelector(".slide-content-title");
+        const slideContent = document.querySelector(".slide-content");
+        let json;
+
+        caller();
+        // changeContents();
+
+
+        async function getJSON() {
+            return fetch('Teaching and Learning/tl-notable.json')
+            .then((response)=>response.json())
+            .then((responseJson)=>{return responseJson});
+        }
         
-        <!--start-->
-        <!-- <div class="background-two-template">
-            <h1 class="psych-title-main">Well-Developed Planning Processes</h1>
-            <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/0fc704ddae.html" style="border: 0px; width: 100%; height: 600px;"></iframe>
-        </div> -->
+        async function caller() {
+            json = await this.getJSON(); 
 
-        <div>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image:url(images/Extension-Community/Image6.JPG)">
-                        <div class="info">
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(images/Extension-Community/Image7.jpg)">
-                        <div class="info">
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(images/Extension-Community/Image8.jpg)">
-                        <div class="info">
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(images/Extension-Community/Image9.jpg)">
-                        <div class="info">
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(images/Extension-Community/Image10.jpg)">
-                        <div class="info">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-            
-            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+            for (const slide of slides) {
+                slideToContent.set(slide.id, json[slide.id]);
+            }
 
-            <script>
-                var swiper = new Swiper('.swiper-container', {
-                    effect: 'coverflow',
-                    grabCursor: true,
-                    centeredSlides: true,
-                    slidesPerView: 'auto',
-                });
-            </script>
-        </div>
-    </main>
+            const observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutationRecord) {
+                    checkSlideChange();
+                });    
+            });
+            const target = slides[0];
+            observer.observe(target, { attributes : true, attributeFilter : ['style'] });
+        }
 
-    
-  
+        function checkSlideChange() {
+            if (currentSlide.style.zIndex !== "1") {
+                for (const slide of slides) {
+                    if (slide.style.zIndex === "1") {
+                        currentSlide = slide;
+                        changeContents();
+                        break;
+                    }
+                }
+            }
+        }
+
+        function changeContents() {
+            // console.log(json[currentSlide.id]);
+            slideTitle.innerHTML = json[currentSlide.id]["title"];
+            slideContent.innerHTML = json[currentSlide.id]["content"];
+        }
+
+    </script>
+    <!-- End of Strategy Planning -->
+
+
+
     <script src="index.js"></script>
 </body>
 </html>
