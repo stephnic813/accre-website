@@ -38,7 +38,6 @@
     display: flex;
     font-size: 15px;
     margin-right: 20px;
-    margin-left: 99rem;
     margin-top: 10px;
 
 }
@@ -917,7 +916,10 @@ header .launch-main-quote {
     justify-content: center;
     align-items: center;
     text-align: center;
+
 }
+
+
 .compliance-report-title{
     font-size: var(--fs-large);
     font-family: 'Poppins', sans-serif;
@@ -929,6 +931,7 @@ header .launch-main-quote {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;  
 }
+
 
 /* Template for Title and Subtitle */
 .narratives-report-container{
@@ -1229,6 +1232,7 @@ header .launch-main-quote {
 }
 
 .background-two-template{
+    display: inline-block;
     background: url(images/Pscyh-Background-2.png);
     height: 100vh;
     width: 100%;
@@ -1237,8 +1241,10 @@ header .launch-main-quote {
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 10em;
     
 }
+
 
 
 
