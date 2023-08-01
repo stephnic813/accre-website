@@ -6,7 +6,7 @@
     <title>Psychology Accreditation Website</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="Carousel-noShadow.css">
+    <link rel="stylesheet" href="linkages-carousel.css">
     <!-- Import Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,26 +89,28 @@
             </p>
          
         </div>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" id="content-1" style="background-image: url(./images/International-Linkages/Picture1.jpg)"></div>
-                <div class="swiper-slide" id="content-2"  style="background-image: url(./images/International-Linkages/Picture2.jpg)"></div>
-                <div class="swiper-slide" id="content-3" style="background-image: url(./images/International-Linkages/Picture3.png)"></div>
-                <div class="swiper-slide" id="content-4" style="background-image: url(./images/International-Linkages/Picture4.png)"></div>
-                <div class="swiper-slide" id="content-5" style="background-image: url(./images/International-Linkages/Picture5.jpg)"></div>
-                <div class="swiper-slide" id="content-6" style="background-image: url(./images/International-Linkages/Picture6.jpg)"></div>
-                <div class="swiper-slide" id="content-7" style="background-image: url(./images/International-Linkages/Picture7.jpg)"></div>
-                <div class="swiper-slide" id="content-8" style="background-image: url(./images/International-Linkages/Picture8.png)"></div>
-                <div class="swiper-slide" id="content-9" style="background-image: url(./images/International-Linkages/Picture9.jpg)"></div>
+        <div class="carousel-linkages">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="content-1" style="background-image: url(./images/International-Linkages/Picture1.jpg)"></div>
+                    <div class="swiper-slide" id="content-2"  style="background-image: url(./images/International-Linkages/Picture2.jpg)"></div>
+                    <div class="swiper-slide" id="content-3" style="background-image: url(./images/International-Linkages/Picture3.png)"></div>
+                    <div class="swiper-slide" id="content-4" style="background-image: url(./images/International-Linkages/Picture4.png)"></div>
+                    <div class="swiper-slide" id="content-5" style="background-image: url(./images/International-Linkages/Picture5.jpg)"></div>
+                    <div class="swiper-slide" id="content-6" style="background-image: url(./images/International-Linkages/Picture6.jpg)"></div>
+                    <div class="swiper-slide" id="content-7" style="background-image: url(./images/International-Linkages/Picture7.jpg)"></div>
+                    <div class="swiper-slide" id="content-8" style="background-image: url(./images/International-Linkages/Picture8.png)"></div>
+                    <div class="swiper-slide" id="content-9" style="background-image: url(./images/International-Linkages/Picture9.jpg)"></div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination"></div>
-        </div>
-        <div class="slide-div">
-            <h5 class="slide-content-title"><strong></strong></h5>
-            <p class="slide-content">The Memorandum of Agreement was signed by the Polytechnic University of the Philippines (PUP) officials and Abo Akademi 
-                University representative Dr. Peter Nynas. It was attended by the Dean of the College of Social Sciences and Development, Dr. Raul Roland Sebastian. 
-                Department of Psychology Chair Asst. Prof. Lorraine Charmayne Manansala- Enriquez, Chairpersons from CSSD and The Office of International Affairs Officials.
-            </p>
+            <div class="slide-div">
+                <h5 class="slide-content-title"><strong></strong></h5>
+                <p class="slide-content-linkages">The Memorandum of Agreement was signed by the Polytechnic University of the Philippines (PUP) officials and Abo Akademi 
+                    University representative Dr. Peter Nynas. It was attended by the Dean of the College of Social Sciences and Development, Dr. Raul Roland Sebastian. 
+                    Department of Psychology Chair Asst. Prof. Lorraine Charmayne Manansala- Enriquez, Chairpersons from CSSD and The Office of International Affairs Officials.
+                </p>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -135,7 +137,7 @@
         const slides = document.querySelectorAll(".extension-community-main .swiper-slide");
         let currentSlide = slides[0];
         const slideTitle = document.querySelector(".slide-content-title");
-        const slideContent = document.querySelector(".slide-content");
+        const slideContent = document.querySelector(".slide-content-linkages");
         let json;
 
         caller();

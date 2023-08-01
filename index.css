@@ -1042,10 +1042,10 @@ header .launch-main-quote {
 /* International Linkages */
 .linkages-container{
     display: flex;
-    flex-direction: column;
-    
-    height: 80vh;
-    justify-content: center;
+    flex-direction: column;   
+    height: 60vh;
+    justify-content: flex-start;
+    margin-top: 6em;
     align-items: center;
     text-align: center;
 }
@@ -1053,7 +1053,7 @@ header .launch-main-quote {
     display: flex;
     justify-content: center;
     align-items: center;
- 
+    
     font-family: 'Poppins', sans-serif;
     font-size: var(--fs-double-extra-large);
     font-weight: 700;
@@ -1062,7 +1062,7 @@ header .launch-main-quote {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: var(--fs-regular);
+    font-size: var(--fs-small);
     margin: 0 5em;
 }
 

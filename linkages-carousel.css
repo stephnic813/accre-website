@@ -16,8 +16,7 @@
 }
 .swiper-container{
     width: 100dvw;
-    padding-top: 2em ;
-    padding-bottom: 8em;
+    padding-bottom: 4em;
 }
 .swiper-slide{
     background-position: center;
@@ -32,3 +31,12 @@
  .slide-div h5{    
     text-align: center;
  }
+ .carousel-linkages{
+    height: 80vh;
+ }
+
+.slide-content-linkages{
+    font-size: 1.2em;
+    text-align: center;
+    
+}
