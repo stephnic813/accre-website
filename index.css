@@ -361,7 +361,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 .home > div:nth-child(1) {
-    background-image: url(images/Home_background.jpg);
+    background-image: url(images/homepagebackground.jpg);
 }
 
 .home > div:nth-child(2) {
