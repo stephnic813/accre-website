@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psychology Accreditation Website</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- Import Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- Import Font Awesome -->
-    <script src="https://kit.fontawesome.com/2fa58dfbff.js" crossorigin="anonymous"></script>
-    <!-- Import Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Topnotchers</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="./topnotcher.css">
+    
+        <!-- Import Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- Import Font Awesome -->
+        <script src="https://kit.fontawesome.com/2fa58dfbff.js" crossorigin="anonymous"></script>
+        <!-- Import Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </head>
 </head>
 <body>
 
@@ -73,6 +78,124 @@
             <a href="Documented-accreditors.html"><li><button><span><i class="fa-solid fa-folder-open"></i> Requested Documentation by Accreditors</span></button></li></a>
         </ul>
     </nav>
+
+    <div class="extension-community-main">
+        <div class="compliance-report-container">
+            <div class="compliance-report-subtitle">TOPNOTCHERS</div>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(./images/teaching-learning/Picture02.jpg)"></div>
+                <div class="swiper-slide" style="background-image: url(./images/teaching-learning/Picture03.jpg)"></div>
+                <div class="swiper-slide" style="background-image: url(./images/teaching-learning/Picture04.jpg)"></div>
+                <div class="swiper-slide" style="background-image: url(./images/teaching-learning/Picture05.jpg)"></div>
+                <div class="swiper-slide" style="background-image: url(./images/teaching-learning/Picture06.jpg)"></div>
+                <div class="swiper-slide" style="background-image: url(./images/teaching-learning/Picture07.jpg)"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+    <!-- start-->
+    <div class="extension-community-main graduates">
+        <div class="compliance-report-container">
+            <div class="compliance-report-title">Notable Graduates</div>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="content-1" style="background-image: url(../images/teaching-learning/PictureG.png)"></div>
+                <div class="swiper-slide" id="content-2" style="background-image: url(../images/teaching-learning/PictureA.jpg)"></div>
+                <div class="swiper-slide" id="content-3" style="background-image: url(../images/teaching-learning/PictureB.jpg)"></div>
+                <div class="swiper-slide" id="content-4" style="background-image: url(../images/teaching-learning/PictureC.jpg)"></div>
+                <div class="swiper-slide" id="content-5" style="background-image: url(../images/teaching-learning/PictureD.jpg)"></div>
+                <div class="swiper-slide" id="content-6" style="background-image: url(../images/teaching-learning/PictureE.jpg)"></div>
+                <div class="swiper-slide" id="content-7" style="background-image: url(../images/teaching-learning/PictureF.jpg)"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="slide-div">
+            <h5 class="slide-content-title"><strong></strong></h5>
+            <p class="slide-content">Here are the notable and successful graduates of the BS in Psychology program with their respective milestones. These icons have continuously inspired students enrolled in the program to likewise excel and become successful in the future. The Bachelor of Science in Psychology faculty members ensure an intellectual, collaborative, and engaging learning environment through effective methodologies and approaches as they perform the roles of facilitators taking due consideration of the needs and situations of the students.</p>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container',{
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow:{
+            rotate:20,
+            stretch:0,
+            depth:200,
+            modifier:1,
+            slideShadows:true,
+        },
+        // loop:true,
+        });
+    </script>
+
+    <script>
+        const slideToContent = new Map();
+        const slides = document.querySelectorAll(".extension-community-main.graduates .swiper-slide");
+        let currentSlide = slides[0];
+        const slideTitle = document.querySelector(".slide-content-title");
+        const slideContent = document.querySelector(".slide-content");
+        let json;
+
+        caller();
+        // changeContents();
+
+
+        async function getJSON() {
+            return fetch('../Teaching and Learning/tl-notable.json')
+            .then((response)=>response.json())
+            .then((responseJson)=>{return responseJson});
+        }
+        
+        async function caller() {
+            json = await this.getJSON(); 
+
+            for (const slide of slides) {
+                slideToContent.set(slide.id, json[slide.id]);
+            }
+
+            const observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutationRecord) {
+                    checkSlideChange();
+                });    
+            });
+            const target = slides[0];
+            observer.observe(target, { attributes : true, attributeFilter : ['style'] });
+        }
+
+        function checkSlideChange() {
+            if (currentSlide.style.zIndex !== "1") {
+                for (const slide of slides) {
+                    if (slide.style.zIndex === "1") {
+                        currentSlide = slide;
+                        changeContents();
+                        break;
+                    }
+                }
+            }
+        }
+
+        function changeContents() {
+            // console.log(json[currentSlide.id]);
+            slideTitle.innerHTML = json[currentSlide.id]["title"];
+            slideContent.innerHTML = json[currentSlide.id]["content"];
+        }
+
+    </script>
+
+
+    
 
   
     <script src="index.js"></script>
