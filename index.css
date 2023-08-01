@@ -28,22 +28,24 @@
 
 
 .openpdf{
+    display: inline-block;
     text-align: center;
     font-size: 25px;
-    margin-top: 10px;
     padding-bottom: 30px;
 }
 .instruction-note{
     display: flex;
-    flex-direction: row;
-    font-size: 20px;
+    font-size: 15px;
     margin-right: 20px;
-    margin-left: 140vh;
+    margin-left: 99rem;
+    margin-top: 10px;
+
 }
 
 .instruction-note img{
-    margin-top: 14px;
-    margin-left: 10px;
+    flex: 0 0 auto;
+    margin-right: 3px;
+    margin-left: 3px
 }
 
 *{
@@ -365,28 +367,6 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     object-fit: cover;
 }
 
-/*.home > div:nth-child(1) {
-    background-image: url('./images/jobstreet1.JPG');
-    display: flex;
-    flex-direction: column-reverse;
-    color: var(--clr-text-contrast);
-    text-align: center;
-    font-size: var(--fs-smaller);
-    text-shadow: 2px 2px 0 rgb(0, 0, 0);
-}
-
-.home > div:nth-child(1) > hgroup {
-    padding: 0 3rem;
-}
-
-.home > div:nth-child(1) > hgroup > * {
-    padding-bottom: 3rem;
-}
-
-.home > div:nth-child(1) > hgroup > h3 {
-    font-size: var(--fs-large) !important;
-}*/
-
 .home > div:nth-child(1) {
     display: flex;
     align-items: center;
@@ -422,7 +402,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     box-shadow: 7px 7px #314628;
 }
 
-.home > div:nth-child(2) {
+/*.home > div:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -571,9 +551,9 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     background-size: cover;
     border: solid 7px #800000;
     box-shadow: 7px 7px #314628;
-}
+}*/
 
-.home > div:nth-child(7) {
+.home > div:nth-child(2) {
     height: 90dvh;
     align-items: center;
     display: flex;
@@ -593,17 +573,17 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     
 }
 
-.home > div:nth-child(7) .swiper-wrapper {
+.home > div:nth-child(2) .swiper-wrapper {
     height: 100%;
 }
 
-.home > div:nth-child(7) .swiper-container {
+.home > div:nth-child(2) .swiper-container {
     display: flex;
     width: 90dvw;
     flex-direction: column;
 }
 
-.home > div:nth-child(7) .swiper-slide {
+.home > div:nth-child(2) .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 1000px;
@@ -611,7 +591,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 
-.home > div:nth-child(7) > p {
+.home > div:nth-child(2) > p {
     padding: 1rem 2rem 0 2rem;
     margin: 0 !important;
     text-align: center;
