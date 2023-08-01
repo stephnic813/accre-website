@@ -732,11 +732,6 @@ header .launch-main-quote {
 }
 
 /* Dean message */
-.message {
-    display: flex;
-    flex-direction: column;
-}
-
 .message > div {
     height: 100%;
     width: 100%;
@@ -748,7 +743,6 @@ header .launch-main-quote {
 }
 
 .message > div:nth-child(1) {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -761,25 +755,10 @@ header .launch-main-quote {
     background-repeat: no-repeat;
     background-image: url('./images/Pscyh-Background-2.png');
 }
-.message > div:nth-child(1) > div:first-child .name-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity and color as needed */
-    padding: 10px;
-}
-.message > div:nth-child(1) > div:first-child .name-overlay p.name {
-    margin: 0;
-    color: #fff; /* Text color */
-    font-size: 16px; /* Adjust the font size as needed */
-    font-weight: bold;
-}
+
 .message > div:nth-child(1) > div:first-child {
     height: 70vh; /* Changed from 70dvh to 70vh */
     width: 25vw; /* Changed from 130dvw to 130vw */
-    position: relative;
-
 }
 
 .message > div:nth-child(1) > div:nth-child(2) {
