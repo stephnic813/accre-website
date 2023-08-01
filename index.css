@@ -78,6 +78,13 @@ header:after{
     position: absolute;
 }
 
+
+@media (max-width: 1336px) {
+  header {
+    font-size: 67%;
+  }
+}
+
 header > button {
     font-size: 2.5rem;
     padding: 1rem;
