@@ -394,7 +394,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 .home > div:nth-child(1) > div > img {
-    object-fit: cover;
+    object-fit: fill;
     height: 100%;
     width: 100%;
     overflow: hidden;
