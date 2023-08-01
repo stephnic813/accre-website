@@ -439,7 +439,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 .home > div:nth-child(2) > div:nth-child(2) {
-    width: 60dvw;
+    width: 40dvw;
     font-size: var(--fs-smaller);
     text-align: justify;
 }
@@ -468,7 +468,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     background-image: url('./images/Pscyh-Background.png');
 }
 
-.home > div:nth-child(3) > div:first-child {
+/*.home > div:nth-child(3) > div:first-child {
     height: 70dvh;
     width: 30dvw;
 }
@@ -477,7 +477,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     width: 60dvw;
     font-size: var(--fs-smaller);
     text-align: justify;
-}
+}*/
 
 .home > div:nth-child(3) > div > img {
     object-fit: cover;
