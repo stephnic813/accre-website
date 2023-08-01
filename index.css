@@ -1234,7 +1234,7 @@ header .launch-main-quote {
 .background-two-template{
     display: inline-block;
     background: url(images/Pscyh-Background-2.png);
-    height: 100vh;
+    height: 100%;
     width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
