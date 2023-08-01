@@ -348,10 +348,6 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 .home > div:nth-child(1) {
-    background-image: url(images/homepagebackground.jpg);
-}
-
-.home > div:nth-child(2) {
     background-image: url('./images/jobstreet1.JPG');
     display: flex;
     flex-direction: column-reverse;
@@ -361,16 +357,20 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     text-shadow: 2px 2px 0 rgb(0, 0, 0);
 }
 
-.home > div:nth-child(2) > hgroup {
+.home > div:nth-child(1) > hgroup {
     padding: 0 3rem;
 }
 
-.home > div:nth-child(2) > hgroup > * {
+.home > div:nth-child(1) > hgroup > * {
     padding-bottom: 3rem;
 }
 
-.home > div:nth-child(2) > hgroup > h3 {
+.home > div:nth-child(1) > hgroup > h3 {
     font-size: var(--fs-large) !important;
+}
+
+.home > div:nth-child(2) {
+    background-image: url(images/homepagebackground.jpg);
 }
 
 .home > div:nth-child(3) {
