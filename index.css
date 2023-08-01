@@ -26,6 +26,9 @@
 
 .openpdf{
     text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    padding-bottom: 30px;
 }
 
 *{
