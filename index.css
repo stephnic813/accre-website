@@ -83,6 +83,9 @@ header:after{
   header{
     font-size: 67%;
   }
+  .message{
+    font-size: 67%;
+  }
 }
 
 header > button {
