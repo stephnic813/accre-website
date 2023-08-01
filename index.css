@@ -485,7 +485,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     align-items: center;
     justify-content: space-between;
     height: 80dvh;
-    padding: 2rem;
+    padding: 3rem;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -495,7 +495,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 .home > div:nth-child(4) > div:first-child {
-    width: 40dvw;
+    width: 30dvw;
     font-size: var(--fs-smaller);
     text-align: justify;    
 }
