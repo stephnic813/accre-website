@@ -492,14 +492,14 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 .home > div:nth-child(4) > div:first-child {
-    height: 70dvh;
-    width: 30dvw;
-}
-
-.home > div:nth-child(4) > div:nth-child(2) {
     width: 60dvw;
     font-size: var(--fs-smaller);
     text-align: justify;
+}
+
+.home > div:nth-child(4) > div:nth-child(2) {
+    height: 70dvh;
+    width: 30dvw;
 }
 
 .home > div:nth-child(4) > div > img {
@@ -513,38 +513,26 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 .home > div:nth-child(5) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80dvh;
-    padding: 3rem;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-image: url('./images/Pscyh-Background.png');
-}
-
-.home > div:nth-child(5) > div:first-child {
-    height: 70dvh;
-    width: 30dvw;
-}
-
-.home > div:nth-child(5) > div:nth-child(2) {
-    width: 60dvw;
+    display: flex;
+    flex-direction: column;
+    color: var(--clr-text-contrast);
+    text-align: center;
     font-size: var(--fs-smaller);
-    text-align: justify;
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+    height: 90dvh;
 }
 
-.home > div:nth-child(5) > div > img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background-size: cover;
-    border: solid 7px #800000;
-    box-shadow: 7px 7px #314628;
+.home > div:nth-child(5) > hgroup {
+    padding: 0 3rem;
+}
+
+.home > div:nth-child(5) > hgroup > * {
+    padding-bottom: 3rem;
+}
+
+.home > div:nth-child(5) > hgroup > h3 {
+    font-size: var(--fs-large) !important;
 }
 
 .home > div:nth-child(6) {
