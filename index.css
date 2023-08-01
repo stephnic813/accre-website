@@ -299,13 +299,10 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     width: 100%;
 }
 
-.home-container-passingrate-one,.home-container-passingrate-three{
-    padding-top: 20rem;
+.home-container-passingrate-one,.home-container-passingrate-three, .home-container-percentage-two{
+    padding-top: 10rem;
 }
 
-.home-container-passingrate-one,.home-container-passingrate-three{
-    padding-top: 20rem;
-}
 .home-container-percentage-one, .home-container-percentage-three{
     text-shadow: 5px 1px #f2ca3e;
     font-size: 6em;
@@ -313,7 +310,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     color: #800000;
 }
 .home-container-details-one, .home-container-details-three{
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 700;
     color: #ffff;
     text-shadow: 5px 1px 5px black;
@@ -325,7 +322,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     text-shadow: 5px 1px 5px black;
 }
 .home-container-percentage-two{
-    font-size: 8em;
+    font-size: 6em;
     text-shadow: 5px 1px #f2ca3e;
     font-weight: 700;
     color: #800000;
