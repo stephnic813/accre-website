@@ -1,24 +1,34 @@
 window.onscroll = function() {scrollFunction()};
 
+const headerHome = document.querySelector("header.header-home");
+const headerArrow = document.querySelector(".home-arrow-down");
+const headerImages = document.querySelector(".launch-main-images");
+const headerWelcomeMsg = document.querySelector(".launch-main-welcome"); 
+const headerTitle = document.querySelector("header.header-home .launch-main-title");
+const headerCourse = document.querySelector("header.header-home .launch-main-course");
+const headerQuote = document.querySelector("header.header-home .launch-main-quote");
+
+
 function scrollFunction() {
   if (scrollY > 0.7) {
-    document.querySelector("header.header-home").style.height= "20vh";
-    document.querySelector("header.header-home").style.flexDirection = "row";
-    document.querySelector(".home-arrow-down").style.visibility = "hidden";
-    document.querySelector(".launch-main-images").style.display = "none";
-    document.querySelector(".launch-main-welcome").style.display = "none";
-    document.querySelector("header.header-home .launch-main-title").style.fontSize = "2.2em";
-    document.querySelector("header.header-home .launch-main-course").style.fontSize = "1.75em";
-    document.querySelector("header.header-home .launch-main-quote").style.fontSize = "1.2em";
-  } else if (scrollY >5){
-    document.querySelector("header.header-home").style.height= "100vh";
-    document.querySelector("header.header-home").style.flexDirection = "column";
-    document.querySelector(".home-arrow-down").style.visibility = "visible";
-    document.querySelector(".launch-main-images").style.display = "flex";
-    document.querySelector(".launch-main-welcome").style.display = "block";
-    document.querySelector("header.header-home .launch-main-title").style.fontSize = "3em";
-    document.querySelector("header.header-home .launch-main-course").style.fontSize = "2.6em";
-    document.querySelector("header.header-home .launch-main-quote").style.fontSize = "2em";  
+    if (headerHome) headerHome.style.height = "20vh";
+    if (headerHome) headerHome.style.flexDirection = "row";
+    if (headerArrow) headerArrow.style.visibility = "hidden";
+    if (headerImages) headerImages.style.display = "none";
+    if (headerWelcomeMsg) headerWelcomeMsg.style.display = "none";
+    if (headerTitle) headerTitle.style.fontSize = "2.2em";
+    if (headerCourse) headerCourse.style.fontSize = "1.75em";
+    if (headerQuote) headerQuote.style.fontSize = "1.2em";
+
+  } else if (scrollY > 5) {
+    if (headerHome) headerHome.style.height = "100vh";
+    if (headerHome) headerHome.style.flexDirection = "column";
+    if (headerArrow) headerArrow.style.visibility = "visible";
+    if (headerImages) headerImages.style.display = "flex";
+    if (headerWelcomeMsg) headerWelcomeMsg.style.display = "block";
+    if (headerTitle) headerTitle.style.fontSize = "3em";
+    if (headerCourse) headerCourse.style.fontSize = "2.6em";
+    if (headerQuote) headerQuote.style.fontSize = "2em";
   }
 }
 
