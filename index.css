@@ -546,9 +546,9 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 .home > div:nth-child(4) > div:first-child {
-    width: 60dvw;
+    width: 40dvw;
     font-size: var(--fs-smaller);
-    text-align: justify;
+    text-align: justify;    
 }
 
 .home > div:nth-child(4) > div:nth-child(2) {
@@ -609,9 +609,9 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 .home > div:nth-child(6) > div:nth-child(2) {
-    width: 60dvw;
+    width: 40dvw;
     font-size: var(--fs-smaller);
-    text-align: justify;
+    text-align: justify;    
 }
 
 .home > div:nth-child(6) > div > img {
