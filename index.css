@@ -1165,6 +1165,11 @@ header .launch-main-quote {
     padding: 1em 0;
     
 }
+.faculty-image{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
 .faculty-wrapper-top, 
 .faculty-wrapper-bottom {
     display: flex;
