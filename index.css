@@ -79,8 +79,8 @@ header:after{
 }
 
 
-@media (max-width: 1336px) {
-  header {
+@media (max-width: 1340px) {
+  header{
     font-size: 67%;
   }
 }
