@@ -441,7 +441,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 .home > div:nth-child(2) > div:nth-child(2) {
     width: 40dvw;
     font-size: var(--fs-smaller);
-    text-align: justify;
+    text-align: justify;    
 }
 
 .home > div:nth-child(2) > div > img {
