@@ -464,6 +464,17 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     text-shadow: 2px 2px 0 rgb(0, 0, 0);
 }
 
+.home > div:nth-child(3) > div:first-child {
+    height: 70dvh;
+    width: 30dvw;
+}
+
+.home > div:nth-child(3) > div:nth-child(2) {
+    width: 60dvw;
+    font-size: var(--fs-smaller);
+    text-align: justify;
+}
+
 .home > div:nth-child(3) > hgroup {
     padding: 0 3rem;
 }
