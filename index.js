@@ -16,9 +16,9 @@ function scrollFunction() {
     if (headerArrow) headerArrow.style.visibility = "hidden";
     if (headerImages) headerImages.style.display = "none";
     if (headerWelcomeMsg) headerWelcomeMsg.style.display = "none";
-    if (headerTitle) headerTitle.style.fontSize = "2.2em";
-    if (headerCourse) headerCourse.style.fontSize = "1.75em";
-    if (headerQuote) headerQuote.style.fontSize = "1.2em";
+    if (headerTitle) headerTitle.style.fontSize = "2.em";
+    if (headerCourse) headerCourse.style.fontSize = "1.5em";
+    if (headerQuote) headerQuote.style.fontSize = "1em";
 
   } else if (scrollY > 5) {
     if (headerHome) headerHome.style.height = "100vh";
