@@ -732,11 +732,6 @@ header .launch-main-quote {
 }
 
 /* Dean message */
-.message {
-    display: flex;
-    flex-direction: column;
-}
-
 .message > div {
     height: 100%;
     width: 100%;
@@ -934,14 +929,18 @@ header .launch-main-quote {
 
 .background-two-template{
     background: url(images/Pscyh-Background-2.png);
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
+
+
+
 
 .background-pscyh-two-auto{
     background: url(images/Pscyh-Background-2.png);
