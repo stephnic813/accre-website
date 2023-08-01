@@ -30,6 +30,18 @@
     margin-top: 10px;
     padding-bottom: 30px;
 }
+.instruction-note{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 140vh;
+}
+
+.instruction-note img{
+    margin-top: 14px;
+    margin-left: 10px;
+}
 
 *{
     margin: 0;
