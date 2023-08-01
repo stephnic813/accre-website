@@ -378,7 +378,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('./images/Pscyh-Background.png');
+    background-image: url('./images/Pscyh-Background-2.png');
 }
 
 .home > div:nth-child(1) > div:first-child {
@@ -562,7 +562,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     gap: 3rem;
     overflow: hidden;
     padding: 0 3rem;
-    background: url(images/Pscyh-Background-2.png);
+    background: url(images/Pscyh-Background.png);
     height: 80dvh;
     width: 100%;
     -webkit-background-size: cover;

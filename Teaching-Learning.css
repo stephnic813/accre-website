@@ -25,6 +25,23 @@
     padding-bottom: 2em;
    
 }
+.notable-main-container{
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 3em;
+}
+.narratives-report-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fs-small);
+    margin: 0 5em;
+    margin-bottom: 5em;
+}
 .swiper-slide{
     background-position: center;
     background-size: cover;
@@ -48,12 +65,13 @@
  .slide-div{    
     text-align: justify;
     margin: 0 300px;
-    margin-bottom: 3em;
+    margin-bottom: 5em;
     height: 50vh;
   
    
  }
  .slide-div p{   
-    font-size: 1.2em; 
+    font-size: 1.3em; 
+    
     text-align: center;
  }

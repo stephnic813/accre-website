@@ -16,6 +16,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
+    overflow: hidden;
 }
 .extension-community-title{
     font-size: var(--fs-extra-large);
@@ -34,6 +36,7 @@
     height: 430px;
     /* -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006); */
 }
+
 .brochure-img{
     display: flex;
     justify-content: space-between;
