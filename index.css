@@ -28,7 +28,8 @@
 
 
 .openpdf{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-size: 25px;
     padding-bottom: 30px;
