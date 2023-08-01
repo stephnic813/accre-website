@@ -627,6 +627,256 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     border: solid 8px #DBA729 !important ;
 }
 
+/* NewsPage */
+.news {
+    display: flex;
+    flex-direction: column;
+}
+.news > div {
+    height: 100dvh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.news-main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
+.news-container-passingrate-one,.news-container-passingrate-three, .news-container-percentage-two{
+    padding-top: 10rem;
+}
+
+.news-container-percentage-one, .news-container-percentage-three{
+    text-shadow: 5px 1px #f2ca3e;
+    font-size: 6em;
+    font-weight: 700;
+    color: #800000;
+}
+.news-container-details-one, .news-container-details-three{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ffff;
+    text-shadow: 5px 1px 5px black;
+}
+.news-container-national-one, .news-container-national-three{
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #ffff;
+    text-shadow: 5px 1px 5px black;
+}
+.news-container-percentage-two{
+    font-size: 6em;
+    text-shadow: 5px 1px #f2ca3e;
+    font-weight: 700;
+    color: #800000;
+}
+.news-container-details-two{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ffff;
+    text-shadow: 5px 1px 5px black;
+}
+.news-container-national-two{
+    font-weight: 700;
+    color: #ffff;
+    text-shadow: 5px 1px 5px black;
+}
+
+.news-main-images{
+    display: flex;
+    justify-content: flex-end;
+    /* margin-top: 5rem; */
+    /* margin-right: 17rem; */
+    margin-top: 5rem;
+    padding-right: 5rem;
+}
+
+.news-image img{
+    width:  12vh;
+    margin: 0 0.5rem;
+    height: auto;
+    object-fit: cover;
+}
+
+.news > div:nth-child(1) {
+    background-image: url('./images/jobstreet1.JPG');
+    display: flex;
+    flex-direction: column-reverse;
+    color: var(--clr-text-contrast);
+    text-align: center;
+    font-size: var(--fs-smaller);
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+}
+
+.news > div:nth-child(1) > hgroup {
+    padding: 0 3rem;
+}
+
+.news > div:nth-child(1) > hgroup > * {
+    padding-bottom: 3rem;
+}
+
+.news > div:nth-child(1) > hgroup > h3 {
+    font-size: var(--fs-large) !important;
+}
+
+.news > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80dvh;
+    padding: 3rem;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./images/Pscyh-Background.png');
+}
+
+.news > div:nth-child(2) > div:first-child {
+    height: 70dvh;
+    width: 30dvw;
+}
+
+.news > div:nth-child(2) > div:nth-child(2) {
+    width: 60dvw;
+    font-size: var(--fs-smaller);
+    text-align: justify;
+}
+
+.news > div:nth-child(2) > div > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    border: solid 7px #800000;
+    box-shadow: 7px 7px #314628;
+}
+
+.news > div:nth-child(3) {
+    background-image: url('./images/top1.JPG');
+    display: flex;
+    flex-direction: column-reverse;
+    color: var(--clr-text-contrast);
+    text-align: center;
+    font-size: var(--fs-smaller);
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+}
+
+.news > div:nth-child(3) > hgroup {
+    padding: 0 3rem;
+}
+
+.news > div:nth-child(3) > hgroup > * {
+    padding-bottom: 3rem;
+}
+
+.news > div:nth-child(3) > hgroup > h3 {
+    font-size: var(--fs-large) !important;
+}
+
+.news > div:nth-child(4) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80dvh;
+    padding: 3rem;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./images/Pscyh-Background.png');
+}
+
+.news > div:nth-child(4) > div:nth-child(2) {
+    height: 70dvh;
+    width: 30dvw;
+}
+
+.news > div:nth-child(4) > div:first-child {
+    width: 60dvw;
+    font-size: var(--fs-smaller);
+    text-align: justify;
+}
+
+.news > div:nth-child(4) > div > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    border: solid 7px #800000;
+    box-shadow: 7px 7px #314628;
+}
+
+.news > div:nth-child(5) {
+    background-image: url(images/Global\ UGRAD\ Awardees-cropped.jpg);
+    display: flex;
+    flex-direction: column-reverse;
+    color: var(--clr-text-contrast);
+    text-align: center;
+    font-size: var(--fs-smaller);
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+}
+
+.news > div:nth-child(5) > hgroup {
+    padding: 0 3rem;
+}
+
+.news > div:nth-child(5) > hgroup > * {
+    padding-bottom: 3rem;
+}
+
+.news > div:nth-child(5) > hgroup > h3 {
+    font-size: var(--fs-large) !important;
+}
+
+.news > div:nth-child(6) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80dvh;
+    padding: 3rem;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./images/Pscyh-Background.png');
+}
+
+.news > div:nth-child(6) > div:first-child {
+    height: 70dvh;
+    width: 30dvw;
+}
+
+.news > div:nth-child(6) > div:nth-child(2) {
+    width: 60dvw;
+    font-size: var(--fs-smaller);
+    text-align: justify;
+}
+
+.news > div:nth-child(6) > div > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    border: solid 7px #800000;
+    box-shadow: 7px 7px #314628;
+}
+
 
 /* TEMPLATE HEADER */
 header {
