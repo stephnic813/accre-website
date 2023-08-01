@@ -15,7 +15,12 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 700; 
 }
-
+.research-title{
+  
+    font-size: var(--fs-large);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; 
+}
 .swiper-container{
     width: 100dvw;
     padding-top: 2em ;
