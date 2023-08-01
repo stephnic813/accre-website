@@ -408,7 +408,38 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 .home > div:nth-child(2) {
-    background-image: url(images/homepagebackground.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80dvh;
+    padding: 3rem;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./images/Pscyh-Background.png');
+}
+
+.home > div:nth-child(2) > div:first-child {
+    height: 70dvh;
+    width: 30dvw;
+}
+
+.home > div:nth-child(2) > div:nth-child(2) {
+    width: 60dvw;
+    font-size: var(--fs-smaller);
+    text-align: justify;
+}
+
+.home > div:nth-child(2) > div > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    border: solid 7px #800000;
+    box-shadow: 7px 7px #314628;
 }
 
 .home > div:nth-child(3) {
@@ -446,26 +477,39 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     box-shadow: 7px 7px #314628;
 }
 
-/*.home > div:nth-child(4) {
-    background-image: url('./images/top1.JPG');
+.home > div:nth-child(4) {
     display: flex;
-    flex-direction: column-reverse;
-    color: var(--clr-text-contrast);
-    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 80dvh;
+    padding: 3rem;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./images/Pscyh-Background.png');
+}
+
+.home > div:nth-child(4) > div:first-child {
+    height: 70dvh;
+    width: 30dvw;
+}
+
+.home > div:nth-child(4) > div:nth-child(2) {
+    width: 60dvw;
     font-size: var(--fs-smaller);
-    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+    text-align: justify;
 }
 
-.home > div:nth-child(4) > hgroup {
-    padding: 0 3rem;
-}
-
-.home > div:nth-child(4) > hgroup > * {
-    padding-bottom: 3rem;
-}
-
-.home > div:nth-child(4) > hgroup > h3 {
-    font-size: var(--fs-large) !important;
+.home > div:nth-child(4) > div > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    border: solid 7px #800000;
+    box-shadow: 7px 7px #314628;
 }
 
 .home > div:nth-child(5) {
@@ -482,12 +526,12 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     background-image: url('./images/Pscyh-Background.png');
 }
 
-.home > div:nth-child(5) > div:nth-child(2) {
+.home > div:nth-child(5) > div:first-child {
     height: 70dvh;
     width: 30dvw;
 }
 
-.home > div:nth-child(5) > div:first-child {
+.home > div:nth-child(5) > div:nth-child(2) {
     width: 60dvw;
     font-size: var(--fs-smaller);
     text-align: justify;
@@ -504,28 +548,6 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 .home > div:nth-child(6) {
-    background-image: url(images/Global\ UGRAD\ Awardees-cropped.jpg);
-    display: flex;
-    flex-direction: column-reverse;
-    color: var(--clr-text-contrast);
-    text-align: center;
-    font-size: var(--fs-smaller);
-    text-shadow: 2px 2px 0 rgb(0, 0, 0);
-}
-
-.home > div:nth-child(6) > hgroup {
-    padding: 0 3rem;
-}
-
-.home > div:nth-child(6) > hgroup > * {
-    padding-bottom: 3rem;
-}
-
-.home > div:nth-child(6) > hgroup > h3 {
-    font-size: var(--fs-large) !important;
-}
-
-.home > div:nth-child(7) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -539,18 +561,18 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     background-image: url('./images/Pscyh-Background.png');
 }
 
-.home > div:nth-child(7) > div:first-child {
+.home > div:nth-child(6) > div:first-child {
     height: 70dvh;
     width: 30dvw;
 }
 
-.home > div:nth-child(7) > div:nth-child(2) {
+.home > div:nth-child(6) > div:nth-child(2) {
     width: 60dvw;
     font-size: var(--fs-smaller);
     text-align: justify;
 }
 
-.home > div:nth-child(7) > div > img {
+.home > div:nth-child(6) > div > img {
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -558,9 +580,9 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     background-size: cover;
     border: solid 7px #800000;
     box-shadow: 7px 7px #314628;
-}*/
+}
 
-.home > div:nth-child(4) {
+.home > div:nth-child(7) {
     height: 90dvh;
     align-items: center;
     display: flex;
@@ -580,17 +602,17 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     
 }
 
-.home > div:nth-child(4) .swiper-wrapper {
+.home > div:nth-child(7) .swiper-wrapper {
     height: 100%;
 }
 
-.home > div:nth-child(4) .swiper-container {
+.home > div:nth-child(7) .swiper-container {
     display: flex;
     width: 90dvw;
     flex-direction: column;
 }
 
-.home > div:nth-child(4) .swiper-slide {
+.home > div:nth-child(7) .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 1000px;
@@ -598,7 +620,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 
-.home > div:nth-child(4) > p {
+.home > div:nth-child(7) > p {
     padding: 1rem 2rem 0 2rem;
     margin: 0 !important;
     text-align: center;
