@@ -256,20 +256,23 @@
                 </div>
             </div>
         </div>
-            
-            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-            <script>
-                var swiper = new Swiper('.swiper-container', {
-                    effect: 'coverflow',
-                    grabCursor: true,
-                    centeredSlides: true,
-                    slidesPerView: 'auto',
-                    loop: true,
-                });
-            </script>
-        </div>
+        
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            loop: true,
+            autoplay: {
+                delay: 8000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
     <script src="index.js"></script>
 </body>
 </html>
