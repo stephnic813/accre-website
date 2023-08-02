@@ -240,9 +240,15 @@ nav > div {
 }
 
 nav > div > img {
-    width: 8rem;
+    width: calc(4.5rem + 1vw);
     height: auto;
     padding: 0 1rem !important; 
+}
+
+@media (max-width: 1023px) {
+    header {
+        font-size: 67%;
+    }
 }
 
 nav > ul {
