@@ -1165,7 +1165,7 @@ header .launch-main-quote {
 }
 .faculty-title{
     font-size: var(--fs-extra-large);
-    font-weight: 600;
+    font-weight: 700;
 }
 .faculty-container-top{
     display: grid;
