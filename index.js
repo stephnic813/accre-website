@@ -58,3 +58,18 @@ const collapseNav = function() {
 
 
 
+/* Go back to top btn */
+
+const goBackTopBtn = document.querySelector(".go-back-top-btn");
+
+
+document.addEventListener("scroll", () => {
+  if (document.documentElement.scrollTop > 200) {
+    goBackTopBtn.classList.add("show");
+  }
+  else {
+    goBackTopBtn.classList.remove("show");
+  }
+});
+
+
