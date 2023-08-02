@@ -649,10 +649,9 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     width: 3rem;
     height: 3rem;
     position: fixed;
-    bottom: 3rem;
-    right: 0;
-    /* padding-right: 2rem; */
-    border-radius: 15px 0 0 15px;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 10px;
 }
 
 .go-back-top-btn > i {
