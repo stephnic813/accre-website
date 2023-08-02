@@ -16,8 +16,8 @@ function scrollFunction() {
     if (headerArrow) headerArrow.style.visibility = "hidden";
     if (headerImages) headerImages.style.display = "none";
     if (headerWelcomeMsg) headerWelcomeMsg.style.display = "none";
-    if (headerTitle) headerTitle.style.fontSize = "2.em";
-    if (headerCourse) headerCourse.style.fontSize = "1.5em";
+    if (headerTitle) headerTitle.style.fontSize = "1.5em";
+    if (headerCourse) headerCourse.style.fontSize = "1.25em";
     if (headerQuote) headerQuote.style.fontSize = "1em";
 
   } else if (scrollY > 5) {
