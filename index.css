@@ -102,10 +102,10 @@ header:after{
 
 
 @media (max-width: 1023px) {
-    header{
+    header {
         font-size: 67%;
     }
-    .message{
+    .message {
         font-size: 67%;
     }
     .home-container-passingrate-one,
@@ -735,7 +735,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     align-items: center;
     justify-content: space-between;
     height: 80dvh;
-    padding: 3rem;
+    padding: 2.5rem;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -792,7 +792,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     align-items: center;
     justify-content: space-between;
     height: 80dvh;
-    padding: 3rem;
+    padding: 2.5rem;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -849,7 +849,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     align-items: center;
     justify-content: space-between;
     height: 80dvh;
-    padding: 3rem;
+    padding: 2.5rem;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
