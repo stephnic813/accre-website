@@ -101,16 +101,18 @@ header:after{
 }
 
 
-@media (max-width: 1380px) {
-  header{
-    font-size: 67%;
-  }
-  .message{
-    font-size: 67%;
-  }
-.home-container-passingrate-one,.home-container-passingrate-three, .home-container-percentage-two{
-    padding-top: 10rem;
-}
+@media (max-width: 1023px) {
+    header{
+        font-size: 67%;
+    }
+    .message{
+        font-size: 67%;
+    }
+    .home-container-passingrate-one,
+    .home-container-passingrate-three, 
+    .home-container-percentage-two {
+        padding-top: 10rem;
+    }
 }
 
 header > button {

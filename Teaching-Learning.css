@@ -83,6 +83,7 @@
 .teach {
     display: flex;
     flex-direction: column;
+    font-size: calc(0.015em + 1vw);
 }
 .teach > div {
     height: 100dvh;
