@@ -245,11 +245,6 @@ nav > div > img {
     padding: 0 1rem !important; 
 }
 
-@media (max-width: 1023px) {
-    header {
-        font-size: 67%;
-    }
-}
 
 nav > ul {
     display: flex;
@@ -380,7 +375,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     align-items: center;
     justify-content: space-between;
     height: 80dvh;
-    padding: 3rem;
+    padding: 2.5rem;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
