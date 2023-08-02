@@ -706,7 +706,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 .news > div:nth-child(1) {
-    background-image: url('./images/jobstreet1.JPG');
+    background-image: url('./images/top\ choice\ employers.jpg');
     display: flex;
     flex-direction: column-reverse;
     color: var(--clr-text-contrast);
@@ -763,7 +763,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 }
 
 .news > div:nth-child(3) {
-    background-image: url('./images/top1.JPG');
+    background-image: url('./images/Review\ Class\ 3.png');
     display: flex;
     flex-direction: column-reverse;
     color: var(--clr-text-contrast);
