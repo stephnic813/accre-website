@@ -707,6 +707,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 
 .news > div:nth-child(1) {
     background-image: url('./images/top\ choice\ employers.jpg');
+    height: 80vh;
     display: flex;
     flex-direction: column-reverse;
     color: var(--clr-text-contrast);
