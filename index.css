@@ -589,8 +589,8 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 .home > div:nth-child(2) .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 1000px;
-    height: 500px;
+    width: 950px;
+    height: 450px;
 }
 
 
