@@ -124,6 +124,13 @@
                     <div class="swiper-slide" id="content-3" style="background-image: url(./images/Extension-Community/extension-partners/Picture3.png)"></div>
                     <div class="swiper-slide" id="content-4" style="background-image: url(./images/Extension-Community/extension-partners/Picture4.png)"></div>
                     <div class="swiper-slide" id="content-5" style="background-image: url(./images/Extension-Community/extension-partners/Picture5.jpg)"></div>
+                    
+                    <!-- Doblehin mga imgs para d magloko ung infinite loop ng carousel -->
+                    <div class="swiper-slide" id="content-1" style="background-image: url(./images/Extension-Community/extension-partners/Picture1.png)"></div>
+                    <div class="swiper-slide" id="content-2"  style="background-image: url(./images/Extension-Community/extension-partners/Picture2.jpg)"></div>
+                    <div class="swiper-slide" id="content-3" style="background-image: url(./images/Extension-Community/extension-partners/Picture3.png)"></div>
+                    <div class="swiper-slide" id="content-4" style="background-image: url(./images/Extension-Community/extension-partners/Picture4.png)"></div>
+                    <div class="swiper-slide" id="content-5" style="background-image: url(./images/Extension-Community/extension-partners/Picture5.jpg)"></div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -138,8 +145,6 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="index.js"></script>
-
     <script>
         var swiper = new Swiper('.swiper-container',{
         pagination: '.swiper-pagination',
@@ -154,7 +159,7 @@
             modifier:1,
             slideShadows:true,
         },
-        // loop:true,
+        loop:true,
         });
     </script>
 
@@ -163,7 +168,7 @@
         const slides = document.querySelectorAll(".extension-community-main .swiper-slide");
         let currentSlide = slides[0];
         const slideTitle = document.querySelector(".slide-content-title");
-        const slideContent = document.querySelector(".slide-content");
+        const slideContent = document.querySelector(".slide-content-extension");
         let json;
 
         caller();
@@ -178,7 +183,7 @@
         
         async function caller() {
             json = await this.getJSON(); 
-
+            
             for (const slide of slides) {
                 slideToContent.set(slide.id, json[slide.id]);
             }
@@ -211,8 +216,9 @@
         }
 
 
-    
-
-    </script>
+        
+        
+        </script>
+        <script src="index.js"></script>
 </body>
 </html>
