@@ -645,7 +645,12 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 
 
 .go-back-top-btn {
-
+    background-color: pink;
+    width: 3dvw;
+    height: 3dvw;
+    position: fixed;
+    bottom: 3rem;
+    right: 0;
 }
 
 
