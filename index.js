@@ -83,5 +83,9 @@ function EnableGoBackToTop() {
   });
 }
 
+goBackTopBtn.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+
 
 
