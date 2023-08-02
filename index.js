@@ -1,5 +1,6 @@
 window.onscroll = function() {scrollFunction()};
 
+let isInHome = true;
 const headerHome = document.querySelector("header.header-home");
 const headerArrow = document.querySelector(".home-arrow-down");
 const headerImages = document.querySelector(".launch-main-images");
@@ -7,10 +8,17 @@ const headerWelcomeMsg = document.querySelector(".launch-main-welcome");
 const headerTitle = document.querySelector("header.header-home .launch-main-title");
 const headerCourse = document.querySelector("header.header-home .launch-main-course");
 const headerQuote = document.querySelector("header.header-home .launch-main-quote");
-// let isTransitionOngoing = false;
-
 
 function scrollFunction() {
+  if (!isInHome) {
+    return;
+  }
+  else if (!headerHome) {
+    isInHome = false;
+    EnableGoBackToTop();
+    return;
+  } 
+
   if (scrollY > 0.7 && headerHome) {
     if (headerHome) headerHome.style.height = "20vh";
     if (headerHome) headerHome.style.flexDirection = "row";
@@ -20,10 +28,10 @@ function scrollFunction() {
     if (headerTitle) headerTitle.style.fontSize = "1.5em";
     if (headerCourse) headerCourse.style.fontSize = "1.25em";
     if (headerQuote) headerQuote.style.fontSize = "1em";
-    isTransitionOngoing = true;
     setTimeout(EnableGoBackToTop, 500);
-
-  } else if (scrollY > 5 && headerHome) {
+    isInHome === true;
+  } 
+  else if (scrollY > 5 && headerHome) {
     if (headerHome) headerHome.style.height = "100vh";
     if (headerHome) headerHome.style.flexDirection = "column";
     if (headerArrow) headerArrow.style.visibility = "visible";
@@ -64,28 +72,33 @@ const collapseNav = function() {
 /* Go back to top btn */
 
 const goBackTopBtn = document.querySelector(".go-back-top-btn");
+// const header =  document.querySelector("nav > *:first-child > *:first-child");
 let isShown = false;
+let isListeningToGoToTopBtn = false;
 
 function EnableGoBackToTop() {
-  document.addEventListener("scroll", () => {
-    console.log(document.documentElement.scrollTop);
-    if (document.documentElement.scrollTop > 100 && !isShown) {
-      goBackTopBtn.classList.toggle("show");
-      goBackTopBtn.classList.toggle("hide");
-      isShown = true;
-    }
-    else if (document.documentElement.scrollTop <= 100 && isShown) {
-      goBackTopBtn.classList.toggle("hide");
-      goBackTopBtn.classList.toggle("show");
-      isShown = false;
-    }
-
-  });
+  if (isListeningToGoToTopBtn) return;
+  document.addEventListener("scroll", checkScrollHeight);
+  console.log("UMULET EEEE");
+  isListeningToGoToTopBtn = true;
 }
 
-goBackTopBtn.addEventListener("click", () => {
+function checkScrollHeight() {
+  isShown = goBackTopBtn.classList.contains("show");
+  if (document.documentElement.scrollTop > 10 && !isShown) {
+    goBackTopBtn.classList.toggle("show");
+    goBackTopBtn.classList.toggle("hide");
+    console.log("LaGAY");
+  }
+  else if (document.documentElement.scrollTop <= 10 && isShown) {
+    goBackTopBtn.classList.toggle("hide");
+    goBackTopBtn.classList.toggle("show");
+    console.log("ALIS");
+  }
+}
+
+goBackTopBtn.addEventListener('click', () => {
   window.scrollTo(0, 0);
 });
-
 
 

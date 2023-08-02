@@ -56,11 +56,11 @@
 
 html{
     scroll-behavior: smooth;
-    
 }
 body{
     font-family: 'Poppins', sans-serif !important;
 }
+
 a {
     color: white!important;
     text-decoration: none !important;
@@ -653,28 +653,20 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     bottom: 1rem;
     right: 1rem;
     border-radius: 10px;
-    /* display: none; */
-    /* animation: fade-out 2s; */
-    display: block;
+    /* display: block; */
+    /* z-index: 20; */
 }
 
 .go-back-top-btn.show {
-    /* animation: fade-in 0.25s; */
-    animation: fade-in 0.25s ease-in both;
+    animation: fade-in 0.2s ease-in both;
 
 }
 .go-back-top-btn.hide {
-    /* animation: fade-out 0.25s; */
-    animation: fade-out 0.25s ease-out both;
+    animation: fade-out 0.2s ease-out both;
 }
-/* .go-back-top-btn { */
-    /* animation: fade-out 0.5s; */
-    /* display: none; */
-/* } */
 
 .go-back-top-btn > i {
     font-size: 1.25em;
-    /* padding: 0.01rem; */
 }
 
 @keyframes fade-in {
