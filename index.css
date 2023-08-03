@@ -138,6 +138,8 @@ header > button {
     cursor: pointer;
     color: #ffff;
     width: min-content;
+    /* align-self: center; */
+    /* height: min-content; */
 }
 
 header > button:last-child {
@@ -953,6 +955,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 /* TEMPLATE HEADER */
 header {
     height: 20vh;
+    /* align-items: center; */
     flex-direction: row;
     background-color: #800000 ;
     display: flex;

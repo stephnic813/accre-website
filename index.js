@@ -16,6 +16,7 @@ function CheckIsInHome() {
 let isInHome = true;
 const headerHome = document.querySelector("header.header-home");
 const headerArrow = document.querySelector(".home-arrow-down");
+// const header
 const headerImages = document.querySelector(".launch-main-images");
 const headerWelcomeMsg = document.querySelector(".launch-main-welcome"); 
 const headerTitle = document.querySelector("header.header-home .launch-main-title");
@@ -27,6 +28,8 @@ function scrollFunction() {
     headerHome.style.height = "20vh";
     headerHome.style.flexDirection = "row";
     headerArrow.style.visibility = "hidden";
+    headerArrow.parentElement.tabIndex = -1;
+    hamburgerBtn.style.alignSelf = "center";
     headerImages.style.display = "none";
     headerWelcomeMsg.style.display = "none";
     headerTitle.style.fontSize = "1.5em";
@@ -37,9 +40,11 @@ function scrollFunction() {
   } 
   /* NOTE: Code to full header (launch page) */
   // else if (scrollY > 5 && headerHome) {
-  //   if (headerHome) headerHome.style.height = "100vh";
-  //   if (headerHome) headerHome.style.flexDirection = "column";
-  //   if (headerArrow) headerArrow.style.visibility = "visible";
+    //   if (headerHome) headerHome.style.height = "100vh";
+    //   if (headerHome) headerHome.style.flexDirection = "column";
+    //   if (headerArrow) headerArrow.style.visibility = "visible";
+    // headerArrow.parentElement.tabIndex = 0;
+    // hamburgerBtn.style.alignSelf = "start";
   //   if (headerImages) headerImages.style.display = "flex";
   //   if (headerWelcomeMsg) headerWelcomeMsg.style.display = "block";
   //   if (headerTitle) headerTitle.style.fontSize = "3em";
