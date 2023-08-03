@@ -60,6 +60,7 @@ html{
 body{
     font-family: 'Poppins', sans-serif !important;
 }
+
 a {
     color: white!important;
     text-decoration: none !important;
@@ -75,6 +76,20 @@ header.header-home {
     transition: all ease-in-out 0.5s;
     z-index: 1;
 }
+
+
+header .launch-main-title {
+    font-size: 1.5em;
+}
+
+header .launch-main-course {
+    font-size: 1.25em;
+}
+
+header .launch-main-quote {
+    font-size: 1em;
+}
+
 
 
 header.header-home > button:last-child {
@@ -629,6 +644,55 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     border: solid 8px #DBA729 !important ;
 }
 
+
+.go-back-top-btn {
+    background-color: pink;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 10px;
+    /* display: block; */
+    /* z-index: 20; */
+}
+
+.go-back-top-btn.show {
+    animation: fade-in 0.2s ease-in both;
+
+}
+.go-back-top-btn.hide {
+    animation: fade-out 0.2s ease-out both;
+}
+
+.go-back-top-btn > i {
+    font-size: 1.25em;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
 /* NewsPage */
 .news {
     display: flex;
@@ -890,7 +954,7 @@ header {
     position: sticky;
     justify-content: space-between;
     transition: all ease-in-out 0.5s;
-    /* font-size: 3rem; */
+    /* font-size: 1.5rem; */
     
 }
 
@@ -900,15 +964,15 @@ header > button:last-child {
     
 }
 
-header .launch-main-title {
+header.header-home .launch-main-title {
     font-size: 2em;
 }
 
-header .launch-main-course {
+header.header-home .launch-main-course {
     font-size: 1.5em;
 }
 
-header .launch-main-quote {
+header.header-home .launch-main-quote {
     font-size: 1em;
 }
 

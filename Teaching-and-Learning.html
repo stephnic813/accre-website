@@ -113,7 +113,7 @@
                 
             </div>
             <div class="home-main-images">
-                <div class="home-image"><img src="images/PUP_logo.png"></div>
+                <div class="home-image"><img src="./images/PUP_logo.png"></div>
                 <div class="home-image"><img src="images/Tempo_logo.png"></div>
                 <div class="home-image"><img src="images/Psychologo_logo.png"></div>
             </div>
@@ -126,7 +126,7 @@
         <div class="compliance-report-container">
             <div class="narratives-report-title">Topnotchers</div>
         </div>
-        <div class="swiper-container">
+        <div class="swiper-container topnotchers">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background-image: url(./images/teaching-learning/Picture02.jpg)"></div>
                 <div class="swiper-slide" style="background-image: url(./images/teaching-learning/Picture03.jpg)"></div>
@@ -148,7 +148,7 @@
                 and engaging learning environment through effective methodologies and approaches as they perform the roles of facilitators taking
                  due consideration of the needs and situations of the students.</div>
         </div>
-        <div class="swiper-container notable-container">
+        <div class="swiper-container graduates notable-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" id="content-1" style="background-image: url(./images/teaching-learning/PictureG.png)"></div>
                 <div class="swiper-slide" id="content-2" style="background-image: url(./images/teaching-learning/PictureA.jpg)"></div>
@@ -165,11 +165,13 @@
             <p class="slide-content">Here are the notable and successful graduates of the BS in Psychology program with their respective milestones. These icons have continuously inspired students enrolled in the program to likewise excel and become successful in the future. The Bachelor of Science in Psychology faculty members ensure an intellectual, collaborative, and engaging learning environment through effective methodologies and approaches as they perform the roles of facilitators taking due consideration of the needs and situations of the students.</p>
         </div>
     </div>
+    <button class="go-back-top-btn hide"><i class="fa-solid fa-angles-up"></i></button>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container',{
+        /* For Topnotchers Carousel */
+        var swiperTopnotchers = new Swiper('.swiper-container.topnotchers',{
             pagination: '.swiper-pagination',
             effect: 'coverflow',
             grabCursor: true,
@@ -188,7 +190,28 @@
                 disableOnInteraction: false,
             },
         });
+        /* For Graduates Carousel */
+        var swiperGraduates = new Swiper('.swiper-container.graduates',{
+            pagination: '.swiper-pagination',
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflow:{
+                rotate:20,
+                stretch:0,
+                depth:200,
+                modifier:1,
+                slideShadows:true,
+            },
+            loop:true,
+            autoplay: {
+                delay: 25000,
+                disableOnInteraction: false,
+            },
+        });
     </script>
+
 
     <script>
         const slideToContent = new Map();
@@ -203,7 +226,7 @@
 
 
         async function getJSON() {
-            return fetch('../Teaching and Learning/tl-notable.json')
+            return fetch('./Teaching and Learning/tl-notable.json')
             .then((response)=>response.json())
             .then((responseJson)=>{return responseJson});
         }
