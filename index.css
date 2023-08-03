@@ -653,6 +653,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     bottom: 1rem;
     right: 1rem;
     border-radius: 10px;
+    visibility: hidden;
     /* display: block; */
     /* z-index: 20; */
 }

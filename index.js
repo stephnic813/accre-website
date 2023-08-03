@@ -1,4 +1,17 @@
-window.onscroll = function() {scrollFunction()};
+/* Execute on start */
+function onStart() {
+  CheckIsInHome();
+}
+
+/* Determine if current page is home page or not */
+function CheckIsInHome() {
+  if (!headerHome) {
+    isInHome = false;
+    EnableGoBackToTop();
+    return;
+  }
+  window.addEventListener("scroll", scrollFunction);
+}
 
 let isInHome = true;
 const headerHome = document.querySelector("header.header-home");
@@ -10,37 +23,29 @@ const headerCourse = document.querySelector("header.header-home .launch-main-cou
 const headerQuote = document.querySelector("header.header-home .launch-main-quote");
 
 function scrollFunction() {
-  if (!isInHome) {
-    return;
-  }
-  else if (!headerHome) {
-    isInHome = false;
-    EnableGoBackToTop();
-    return;
-  } 
-
   if (scrollY > 0.7 && headerHome) {
-    if (headerHome) headerHome.style.height = "20vh";
-    if (headerHome) headerHome.style.flexDirection = "row";
-    if (headerArrow) headerArrow.style.visibility = "hidden";
-    if (headerImages) headerImages.style.display = "none";
-    if (headerWelcomeMsg) headerWelcomeMsg.style.display = "none";
-    if (headerTitle) headerTitle.style.fontSize = "1.5em";
-    if (headerCourse) headerCourse.style.fontSize = "1.25em";
-    if (headerQuote) headerQuote.style.fontSize = "1em";
+    headerHome.style.height = "20vh";
+    headerHome.style.flexDirection = "row";
+    headerArrow.style.visibility = "hidden";
+    headerImages.style.display = "none";
+    headerWelcomeMsg.style.display = "none";
+    headerTitle.style.fontSize = "1.5em";
+    headerCourse.style.fontSize = "1.25em";
+    headerQuote.style.fontSize = "1em";
     setTimeout(EnableGoBackToTop, 500);
     isInHome === true;
   } 
-  else if (scrollY > 5 && headerHome) {
-    if (headerHome) headerHome.style.height = "100vh";
-    if (headerHome) headerHome.style.flexDirection = "column";
-    if (headerArrow) headerArrow.style.visibility = "visible";
-    if (headerImages) headerImages.style.display = "flex";
-    if (headerWelcomeMsg) headerWelcomeMsg.style.display = "block";
-    if (headerTitle) headerTitle.style.fontSize = "3em";
-    if (headerCourse) headerCourse.style.fontSize = "2.6em";
-    if (headerQuote) headerQuote.style.fontSize = "2em";
-  }
+  /* NOTE: Code to full header (launch page) */
+  // else if (scrollY > 5 && headerHome) {
+  //   if (headerHome) headerHome.style.height = "100vh";
+  //   if (headerHome) headerHome.style.flexDirection = "column";
+  //   if (headerArrow) headerArrow.style.visibility = "visible";
+  //   if (headerImages) headerImages.style.display = "flex";
+  //   if (headerWelcomeMsg) headerWelcomeMsg.style.display = "block";
+  //   if (headerTitle) headerTitle.style.fontSize = "3em";
+  //   if (headerCourse) headerCourse.style.fontSize = "2.6em";
+  //   if (headerQuote) headerQuote.style.fontSize = "2em";
+  // }
 }
 
 /* Show or collapse sidebar (nav) */
@@ -71,33 +76,40 @@ const collapseNav = function() {
 
 /* Go back to top btn */
 const goBackTopBtn = document.querySelector(".go-back-top-btn");
-let isShown = false;
-let isListeningToGoToTopBtn = false;
+// let isShown = false;
+// let isListeningToGoToTopBtn = false;
 
 function EnableGoBackToTop() {
-  if (isListeningToGoToTopBtn) return;
+  // if (isListeningToGoToTopBtn) {
+  //   return;
+  // }
+  checkScrollHeight();
   window.addEventListener("scroll", checkScrollHeight);
-  isListeningToGoToTopBtn = true;
+  // isListeningToGoToTopBtn = true;
   // console.log("UMULET EEEE");
 }
 
 function checkScrollHeight() {
-  isShown = goBackTopBtn.classList.contains("show");
-  if (window.scrollY > 300 && !isShown) {
-    goBackTopBtn.classList.toggle("show");
-    goBackTopBtn.classList.toggle("hide");
+  let isShown = goBackTopBtn.classList.contains("show");
+  // console.log(window.scrollY,isShown);
+  if (window.scrollY > 150 && !isShown) {
+    goBackTopBtn.classList.add("show");
+    goBackTopBtn.classList.remove("hide");
     // console.log("LaGAY");
   }
-  else if (window.scrollY <= 300 && isShown) {
-    goBackTopBtn.classList.toggle("hide");
-    goBackTopBtn.classList.toggle("show");
+  else if (window.scrollY <= 150 && isShown) {
+    goBackTopBtn.classList.add("hide");
+    goBackTopBtn.classList.remove("show");
     // console.log("ALIS");
   }
 }
 
 goBackTopBtn.addEventListener('click',() => {
-  setTimeout(() => {window.scrollTo(0, 0);}, 200)
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+  }, 200)
   // window.scrollBy(0, -window.scrollY);
 });
 
 
+onStart();
