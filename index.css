@@ -153,6 +153,10 @@ ul, ol {
     list-style: none; 
 } 
 
+.center {
+    text-align: center;
+}
+
 .launch-main-container{
     /* height: 80%; */
     display: flex;
@@ -1391,8 +1395,64 @@ header.header-home .launch-main-quote {
     margin: 0 5em;
 }
 
+
+.extension-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.3em 0;
+    justify-content: center;
+    align-items: center;
+}
+.extension-subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-extra-large);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;  
+    margin-top: 0.5em;
+}
+.extension-desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0 10em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.extension-img-1 img{
+    width: 1000px;
+    height: auto;
+}
+
+/* Start of Brochure CSS */
+.brochure-img{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    }
+.brochure-img img{
+    max-width: 45%;
+    
+}
+.brochure-desc{
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em 5em;
+    font-weight: 500;
+}
+/* End of Brochure CSS */
+
+
 /* Carousel Format */
-.slide-content-title{
+.slide-content-title {
     font-weight: 700;
 }
 .slide-content{
