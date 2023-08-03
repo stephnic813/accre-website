@@ -1266,19 +1266,20 @@ header.header-home .launch-main-quote {
     justify-content: center;
 }
 .faculty-title-top{
-    font-size: var(--fs-small);
+    font-size: var(--fs-smallest);
     font-weight: 600;
     margin-bottom: 0em;
 }
 .faculty-name-top{
-    font-size: var(--fs-smaller);
+    font-size: var(--fs-small);
     font-weight: 600;
     margin-bottom: 0em;
 }
 .faculty-position-top{
-    font-size: var(--fs-smallest);
+    font-size: var(--fs-smaller);
     font-weight: 400;
 }
+
 /* Bottom Part */
 .faculty-container-bottom{
     display: grid;
