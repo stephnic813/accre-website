@@ -1265,8 +1265,13 @@ header.header-home .launch-main-quote {
     flex-direction: column;
     justify-content: center;
 }
-.faculty-name-top{
+.faculty-title-top{
     font-size: var(--fs-small);
+    font-weight: 600;
+    margin-bottom: 0em;
+}
+.faculty-name-top{
+    font-size: var(--fs-smaller);
     font-weight: 600;
     margin-bottom: 0em;
 }
