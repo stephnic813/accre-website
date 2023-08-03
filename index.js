@@ -1,10 +1,20 @@
 /* Execute on start */
 function onStart() {
-  CheckIsInHome();
+  checkIsInHome();
+  goBackTopBtn.addEventListener('click',() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 200)
+  });
+  headerArrowBtn.addEventListener("click", () => {
+    window.scrollTo(0, 0.7);
+  })
+  
+  
 }
 
 /* Determine if current page is home page or not */
-function CheckIsInHome() {
+function checkIsInHome() {
   if (!headerHome) {
     isInHome = false;
     EnableGoBackToTop();
@@ -16,6 +26,7 @@ function CheckIsInHome() {
 let isInHome = true;
 const headerHome = document.querySelector("header.header-home");
 const headerArrow = document.querySelector(".home-arrow-down");
+const headerArrowBtn = headerArrow.parentElement;
 // const header
 const headerImages = document.querySelector(".launch-main-images");
 const headerWelcomeMsg = document.querySelector(".launch-main-welcome"); 
@@ -28,7 +39,7 @@ function scrollFunction() {
     headerHome.style.height = "20vh";
     headerHome.style.flexDirection = "row";
     headerArrow.style.visibility = "hidden";
-    headerArrow.parentElement.tabIndex = -1;
+    headerArrowBtn.style.visibility = "hidden";
     hamburgerBtn.style.alignSelf = "center";
     headerImages.style.display = "none";
     headerWelcomeMsg.style.display = "none";
@@ -38,12 +49,13 @@ function scrollFunction() {
     setTimeout(EnableGoBackToTop, 500);
     isInHome === true;
   } 
-  /* NOTE: Code to full header (launch page) */
+  /* NOTE: Code to full screen header (launch page) */
   // else if (scrollY > 5 && headerHome) {
     //   if (headerHome) headerHome.style.height = "100vh";
     //   if (headerHome) headerHome.style.flexDirection = "column";
     //   if (headerArrow) headerArrow.style.visibility = "visible";
     // headerArrow.parentElement.tabIndex = 0;
+    // headerArrow.parentElement.disabled = "false";
     // hamburgerBtn.style.alignSelf = "start";
   //   if (headerImages) headerImages.style.display = "flex";
   //   if (headerWelcomeMsg) headerWelcomeMsg.style.display = "block";
@@ -79,42 +91,32 @@ const collapseNav = function() {
 
 
 
-/* Go back to top btn */
+/* Go back to top */
 const goBackTopBtn = document.querySelector(".go-back-top-btn");
-// let isShown = false;
-// let isListeningToGoToTopBtn = false;
-
+/* Start listening to scroll height to to show go to top btn */
 function EnableGoBackToTop() {
-  // if (isListeningToGoToTopBtn) {
-  //   return;
-  // }
   checkScrollHeight();
   window.addEventListener("scroll", checkScrollHeight);
-  // isListeningToGoToTopBtn = true;
-  // console.log("UMULET EEEE");
 }
 
+/* Show or hide go to top btn depending on scroll height*/
 function checkScrollHeight() {
   let isShown = goBackTopBtn.classList.contains("show");
-  // console.log(window.scrollY,isShown);
-  if (window.scrollY > 150 && !isShown) {
+  let scrollHeight = window.scrollY;
+
+  if (scrollHeight > 150 && !isShown) {
     goBackTopBtn.classList.add("show");
     goBackTopBtn.classList.remove("hide");
-    // console.log("LaGAY");
   }
-  else if (window.scrollY <= 150 && isShown) {
+  else if (scrollHeight <= 150 && isShown) {
     goBackTopBtn.classList.add("hide");
     goBackTopBtn.classList.remove("show");
-    // console.log("ALIS");
   }
 }
 
-goBackTopBtn.addEventListener('click',() => {
-  setTimeout(() => {
-    window.scrollTo(0, 0);
-  }, 200)
-  // window.scrollBy(0, -window.scrollY);
-});
+
+
+
 
 
 onStart();
