@@ -1169,7 +1169,8 @@ header.header-home .launch-main-quote {
 
 /* Apply styles to the whole table */
 .horizontal-lines-table {
-  border-collapse: collapse; /* Optional: This removes spacing between table cells */
+    border-collapse: collapse; /* Optional: This removes spacing between table cells */
+    padding: 10em;
 }
 
 /* Hide vertical borders for all cells */
@@ -1254,9 +1255,6 @@ header.header-home .launch-main-quote {
     width: 150px;
     height: 200px;
     object-fit: cover;
-}
-.faculty-table{
-    padding: 10em;
 }
 .faculty-wrapper-top, 
 .faculty-wrapper-bottom {
