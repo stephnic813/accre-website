@@ -1251,9 +1251,12 @@ header.header-home .launch-main-quote {
     
 }
 .faculty-image{
-    width: 225px;
-    height: 375px;
+    width: 150px;
+    height: 200px;
     object-fit: cover;
+}
+.faculty-table{
+    padding: 10em;
 }
 .faculty-wrapper-top, 
 .faculty-wrapper-bottom {
