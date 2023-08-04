@@ -1170,7 +1170,7 @@ header.header-home .launch-main-quote {
 /* Apply styles to the whole table */
 .horizontal-lines-table {
     border-collapse: collapse; /* Optional: This removes spacing between table cells */
-    padding: 10px;
+    margin-left: 20px;
 }
 
 /* Hide vertical borders for all cells */
@@ -1178,7 +1178,6 @@ header.header-home .launch-main-quote {
 .horizontal-lines-table td {
   border-left: none;
   border-right: none;
-    padding: 10px;
 }
 
 /* Show horizontal borders for all cells */
