@@ -1,40 +1,33 @@
 /* Execute on start */
-function onStart() {
+const onStart = () => {
   checkIsInHome();
   goBackTopBtn.addEventListener('click',() => {
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 200)
+    setTimeout(() => {window.scrollTo(0, 0);}, 200)
   });
-  headerArrowBtn.addEventListener("click", () => {
-    window.scrollTo(0, 0.7);
-  })
-  
-  
-}
+};
 
 /* Determine if current page is home page or not */
-function checkIsInHome() {
+const  checkIsInHome = () => {
   if (!headerHome) {
-    isInHome = false;
-    EnableGoBackToTop();
+    enableGoBackToTop();
     return;
   }
   window.addEventListener("scroll", scrollFunction);
-}
+  headerArrowBtn.addEventListener("click", () => {window.scrollTo(0, 0.7);});
+};
 
-let isInHome = true;
+
+/* Collapse launch pg to header */
 const headerHome = document.querySelector("header.header-home");
 const headerArrow = document.querySelector(".home-arrow-down");
 const headerArrowBtn = headerArrow.parentElement;
-// const header
 const headerImages = document.querySelector(".launch-main-images");
 const headerWelcomeMsg = document.querySelector(".launch-main-welcome"); 
 const headerTitle = document.querySelector("header.header-home .launch-main-title");
 const headerCourse = document.querySelector("header.header-home .launch-main-course");
 const headerQuote = document.querySelector("header.header-home .launch-main-quote");
 
-function scrollFunction() {
+const scrollFunction = () => {
   if (scrollY > 0.7 && headerHome) {
     headerHome.style.height = "20vh";
     headerHome.style.flexDirection = "row";
@@ -46,9 +39,8 @@ function scrollFunction() {
     headerTitle.style.fontSize = "1.5em";
     headerCourse.style.fontSize = "1.25em";
     headerQuote.style.fontSize = "1em";
-    setTimeout(EnableGoBackToTop, 500);
-    isInHome === true;
-  } 
+    setTimeout(enableGoBackToTop, 500);
+  }
   /* NOTE: Code to full screen header (launch page) */
   // else if (scrollY > 5 && headerHome) {
     //   if (headerHome) headerHome.style.height = "100vh";
@@ -63,7 +55,7 @@ function scrollFunction() {
   //   if (headerCourse) headerCourse.style.fontSize = "2.6em";
   //   if (headerQuote) headerQuote.style.fontSize = "2em";
   // }
-}
+};
 
 /* Show or collapse sidebar (nav) */
 const nav = document.querySelector("nav");
@@ -79,12 +71,12 @@ document.addEventListener("click", (event) => {
   }
 });
 
-const showNav = function() {
+const showNav = () => {
   nav.classList.add("nav-slide-in");
   nav.classList.remove("nav-slide-out");
 };
 
-const collapseNav = function() {
+const collapseNav = () => {
   nav.classList.add("nav-slide-out");
   nav.classList.remove("nav-slide-in");
 };
@@ -93,14 +85,14 @@ const collapseNav = function() {
 
 /* Go back to top */
 const goBackTopBtn = document.querySelector(".go-back-top-btn");
-/* Start listening to scroll height to to show go to top btn */
-function EnableGoBackToTop() {
+/* Start listening to scroll height to show go to top btn */
+const enableGoBackToTop = () => {
   checkScrollHeight();
   window.addEventListener("scroll", checkScrollHeight);
-}
+};
 
-/* Show or hide go to top btn depending on scroll height*/
-function checkScrollHeight() {
+/* Show or hide go to top btn depending on scroll height */
+const checkScrollHeight = () => {
   let isShown = goBackTopBtn.classList.contains("show");
   let scrollHeight = window.scrollY;
 
@@ -112,11 +104,7 @@ function checkScrollHeight() {
     goBackTopBtn.classList.add("hide");
     goBackTopBtn.classList.remove("show");
   }
-}
-
-
-
-
+};
 
 
 onStart();
