@@ -1455,21 +1455,24 @@ header.header-home .launch-main-quote {
 
 /* Documented Accreditors */
 .Accreditors-copc-container{
-    height: 120vh;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    flex-direction: column;
-}
-.Accreditors-copc-pdf-container{
     height: 140vh;
     display: flex;
     align-items: center;
     justify-content:flex-start;
     flex-direction: column;
 }
+.accreditors-img{ 
+    height: 120vh; 
+}
+.Accreditors-copc-pdf-container{
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: column;
+}
 .Accreditors-copc-two-pdf-container{
-    height: 260vh;
+    height: 230vh;
     display: flex;
     gap: 1.5em;
     align-items: center;
@@ -1480,16 +1483,18 @@ header.header-home .launch-main-quote {
     font-family: 'Poppins', sans-serif;
     font-size: var(--fs-extra-large);
     font-weight: 700;
-    padding: 0.3em 0;
-}
-.accreditors-img{  
-    height: 100vh;
+    padding: 0.5em 0;
 }
 .accreditors-faculty-profile{
-    height: 120vh;
-    width: 800px;
+    height: 100vh;
+    width: 600px;
 }
-
+/* Uncomment If one row only */
+/* .accre-two-pdf-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+} */
 
 /* Carousel Format */
 .slide-content-title {
