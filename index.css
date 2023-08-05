@@ -1453,6 +1453,36 @@ header.header-home .launch-main-quote {
 }
 /* End of Brochure CSS */
 
+/* Documented Accreditors */
+.Accreditors-copc-container{
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.Accreditors-copc-two-container{
+    height: 230vh;
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.copc-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-extra-large);
+    font-weight: 700;
+    padding: 0.3em 0;
+}
+.accreditors-img{  
+    height: 100vh;
+}
+.accreditors-faculty-profile{
+    height: 100vh;
+    width: 800px;
+}
+
 
 /* Carousel Format */
 .slide-content-title {
