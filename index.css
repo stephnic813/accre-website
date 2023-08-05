@@ -1461,12 +1461,19 @@ header.header-home .launch-main-quote {
     justify-content:center;
     flex-direction: column;
 }
-.Accreditors-copc-two-container{
-    height: 230vh;
+.Accreditors-copc-pdf-container{
+    height: 140vh;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: column;
+}
+.Accreditors-copc-two-pdf-container{
+    height: 260vh;
     display: flex;
     gap: 1.5em;
     align-items: center;
-    justify-content:center;
+    justify-content:flex-start;
     flex-direction: column;
 }
 .copc-title{
@@ -1479,7 +1486,7 @@ header.header-home .launch-main-quote {
     height: 100vh;
 }
 .accreditors-faculty-profile{
-    height: 100vh;
+    height: 120vh;
     width: 800px;
 }
 
