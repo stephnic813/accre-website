@@ -652,7 +652,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
 
 
 .go-back-top-btn {
-    background-color: pink;
+    background-color: #e4e4e4;
     width: 3.5rem;
     height: 3.5rem;
     position: fixed;
@@ -660,8 +660,7 @@ nav button.btn-toggle[aria-expanded="true"] > i:last-child {
     right: 2rem;
     border-radius: 10px;
     visibility: hidden;
-    /* display: block; */
-    /* z-index: 20; */
+    box-shadow: 0 0 3px #e4e4e4;
 }
 
 .go-back-top-btn.show {
