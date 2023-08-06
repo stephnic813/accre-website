@@ -13,9 +13,9 @@
 }
 
 .scrollable-list {
-  height: 70vh; 
-  overflow-y: auto; 
- 
+    height: 80dvh;
+    overflow-y: auto;
+    padding-bottom: 1rem;
 }
 
 
@@ -256,8 +256,8 @@ nav > div {
     display: flex;
     align-items: center;
     font-size: var(--fs-extra-large);
-    padding: 6rem 1rem !important; 
-    height: 10%
+    padding: 7.5dvh 1rem !important; 
+    height: 10dvh;
 }
 
 nav > div > img {
@@ -271,8 +271,8 @@ nav > ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 2rem;
-    height: 90%;
+    /* gap: 1.5rem; */
+    height: 75dvw;
 }
 
 nav button {
@@ -281,7 +281,7 @@ nav button {
     align-items: center;
     justify-content: space-between;
     gap: 0.5rem;
-    padding: 0 2rem !important;
+    padding: 0.75rem 2rem !important;
     text-align: start !important;
     font-size: var(--fs-double-smallest) !important;
     text-transform: uppercase;
@@ -292,7 +292,8 @@ nav button {
 
 nav button.btn-toggle ~ div button {
     font-size: var(--fs-smallest) !important;
-    padding: 0 5rem !important;
+    padding: 0 3% !important;
+    justify-content: end;
 }
 
 nav button.btn-toggle[aria-expanded="true"] > i:last-child {
