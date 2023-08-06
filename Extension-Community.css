@@ -53,8 +53,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
  }
+ 
  .extension-cssd-desc{
     display: flex;
     align-items: center;
