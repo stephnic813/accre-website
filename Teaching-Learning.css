@@ -65,6 +65,7 @@
     justify-content: flex-start;
     align-items: center;
     overflow: hidden;
+    padding-top: 20dvh;
 }
 .extension-community-title{
     font-size: var(--fs-large);
@@ -215,5 +216,12 @@
 
 .teach > div:nth-child(1) {
     background-image: url(images/homepagebackground.jpg);
+}
+
+.home-parent{
+    display: flex;
+    flex-wrap: wrap; /* Allows the child divs to wrap into multiple rows */
+    justify-content: flex-end;
+
 }
 
