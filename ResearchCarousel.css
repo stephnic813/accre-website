@@ -29,7 +29,6 @@
     font-weight: 700; 
 }
 .research-title{
-  
     font-size: var(--fs-large);
     font-family: 'Poppins', sans-serif;
     font-weight: 700; 
@@ -47,15 +46,16 @@
     height: 380px;
 
 }
- .slide-div{    
-    text-align: justify;
+.slide-div{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0 250px;
-   
- }
- .slide-content{    
-   font-size: 1.3em;
-   margin-bottom: 2em;
- }
+    margin: 0 10%;
+}
+
+.slide-content{
+    text-indent: 5em;
+    font-size: 1.3em;
+    margin-bottom: 2em;
+    text-align: justify;
+}

@@ -46,7 +46,7 @@
     width: 100%;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 0 13.5em;
+    padding: 0 13.5%;
 }
 .mission-contents ul{
     text-align: justify;
@@ -115,24 +115,22 @@
     max-width: 47%;
     display: block;
     margin: 0 auto;
- }
- .brochure-desc{
+}
+.brochure-desc{
     text-align: center;
     margin: 30px 300px;
- }
- .slide-div{    
+}
+.slide-div{    
     text-align: justify;
-    margin: 0 300px;
+    margin: 0 10%;
     margin-bottom: 5em;
     height: 50vh;
-  
-   
- }
- .slide-div p{   
+}
+
+.slide-div p{   
     font-size: 1.3em; 
-    
-    text-align: center;
- }
+    text-align: justify;
+}
 
 /* TeachPage */
 .teach {
