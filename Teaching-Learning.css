@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1em 10em;
+    margin: 1em 13.5%;
     text-align: justify;
     font-weight: 700;
     font-size: 1.3em;
@@ -28,7 +28,7 @@
     justify-content: flex-start;
     width: 100%;
     padding: 0.3em 0;
-    padding-left: 5.2em;
+    padding-left: 13.5%;
     font-size: 2.5em;
     font-weight: 700;
     text-align: left;  
@@ -39,14 +39,14 @@
     justify-content: center;
     font-size: 1.3em;
     font-weight: 600;
-    margin: 0.5em 10.1em;
+    margin: 0.5em 13.5%;
 }
 .mission-contents{
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 0 12em;
+    padding: 0 13.5em;
 }
 .mission-contents ul{
     text-align: justify;
