@@ -287,7 +287,12 @@ nav button {
     text-transform: uppercase;
     border-radius: 15px;
     background-color: transparent !important;
-    
+}
+
+nav button > span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 nav button.btn-toggle ~ div button {
