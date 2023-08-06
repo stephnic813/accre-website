@@ -1180,7 +1180,7 @@ header.header-home .launch-main-quote {
 /* Apply styles to the whole table */
 .horizontal-lines-table {
     border-collapse: collapse; /* Optional: This removes spacing between table cells */
-    margin-left: 20px;
+    margin: 0 5%;
 }
 
 /* Hide vertical borders for all cells */
@@ -1291,12 +1291,12 @@ header.header-home .launch-main-quote {
 }
 .faculty-name-top{
     font-size: var(--fs-small);
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 0em;
 }
-.faculty-position-top{
+.faculty-position-top > strong {
     font-size: var(--fs-smaller);
-    font-weight: 400;
+    font-weight: 600 !important;
 }
 
 /* Bottom Part */
@@ -1423,7 +1423,7 @@ header.header-home .launch-main-quote {
     justify-content: center;
     align-items: center;
     font-size: var(--fs-small);
-    margin: 0 5em;
+    margin: 0 10%;
 }
 
 

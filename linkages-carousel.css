@@ -26,21 +26,22 @@
     background-position: center;
     background-size: cover;
     width: 600px; /* Set a fixed width */
-     height: 338px;
+height: 338px;
 }
-.slide-div{    
+.slide-div{
     text-align: justify;
-    margin: 0 300px;
- }
- .slide-div h5{    
+    margin: 0 10%;
+}
+.slide-div h5{ 
     text-align: center;
- }
- .carousel-linkages{
+}
+.carousel-linkages{
     height: 100vh;
- }
+}
 
 .slide-content-linkages{
     font-size: 1.2em;
-    text-align: center;
+    text-align: justify;
+    
     
 }
