@@ -1065,13 +1065,17 @@ header.header-home .launch-main-quote {
 }
 
 .about-us-container {
-    max-width: 50%;
+    max-width: 70%;
+    min-height: 80dvh;
     padding: 2em;
     border-radius: 10px;
     margin-bottom: 2em;
     justify-content: center;
     align-items: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+
 }
 
 /* Side-by-side containers for "Program Learning Outcomes (PLO)" and "Program Objectives (PO)" */
@@ -1082,7 +1086,7 @@ header.header-home .launch-main-quote {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 /* Individual container for PLO and PO */
