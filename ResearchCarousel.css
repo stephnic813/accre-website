@@ -1,11 +1,14 @@
 .research-description{
-    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.3em;
+    padding: 1.2em 10%;
     text-align: justify;
     text-indent: 5em;
-    font-weight: bold;
+    font-weight: 600;
+    line-height: 2.1em;
 }
-
-
 
 
 /* topnotcher */
