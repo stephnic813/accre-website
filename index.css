@@ -1480,6 +1480,19 @@ header.header-home .launch-main-quote {
 }
 /* End of Brochure CSS */
 
+/*for videos*/
+.video {
+    background-image: url('./images/Pscyh-Background.png');
+    display: flex;
+    flex-direction: column;
+    color: var(--clr-text-contrast);
+    text-align: center;
+    font-size: var(--fs-smaller);
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+    height: 90dvh;
+}
+
+
 /* Documented Accreditors */
 .Accreditors-copc-container{
     height: 140vh;
