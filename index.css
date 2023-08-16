@@ -1482,14 +1482,8 @@ header.header-home .launch-main-quote {
 
 /*for videos*/
 .video {
-    background-image: url('./images/Pscyh-Background.png');
     display: flex;
     flex-direction: column;
-    color: var(--clr-text-contrast);
-    text-align: center;
-    font-size: var(--fs-smaller);
-    text-shadow: 2px 2px 0 rgb(0, 0, 0);
-    height: 90dvh;
 }
 .video > div {
     height: 100dvh;
@@ -1499,6 +1493,79 @@ header.header-home .launch-main-quote {
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.video-main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
+.video-container-passingrate-one,.video-container-passingrate-three, .video-container-passingrate-two{
+    border-radius: 25px;
+    margin-top: 10rem;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.video-container-percentage-one, .video-container-percentage-three, .video-container-percentage-two{
+    text-shadow: 5px 1px #f2ca3e;
+    font-size: 6em;
+    font-weight: 700;
+    color: #800000;
+}
+.video-container-details-one,.video-container-details-two, .video-container-details-three{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ffff;
+    text-shadow: 5px 1px 5px black;
+}
+.video-container-national-one,.video-container-national-two, .video-container-national-three{
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #ffff;
+    text-shadow: 5px 1px 5px black;
+}
+
+
+.video-main-images{
+    display: flex;
+    justify-content: flex-end;
+    /* margin-top: 5rem; */
+    /* margin-right: 17rem; */
+    padding-right: 5rem;
+}
+
+.video-image img{
+    width:  12vh;
+    margin: 0 0.5rem;
+    height: auto;
+    object-fit: cover;
+}
+
+.video > div:nth-child(1) {
+    background-image: url('./images/Pscyh-Background.png');
+    display: flex;
+    flex-direction: column;
+    color: var(--clr-text-contrast);
+    text-align: center;
+    font-size: var(--fs-smaller);
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+    height: 90dvh;
+}
+
+.video > div:nth-child(1) > hgroup {
+    padding: 0 3rem;
+}
+
+.video > div:nth-child(1) > hgroup > * {
+    padding-bottom: 3rem;
+}
+
+.video > div:nth-child(1) > hgroup > h3 {
+    font-size: var(--fs-large) !important;
 }
 
 
