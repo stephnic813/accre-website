@@ -1491,6 +1491,15 @@ header.header-home .launch-main-quote {
     text-shadow: 2px 2px 0 rgb(0, 0, 0);
     height: 90dvh;
 }
+.video > div {
+    height: 100dvh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
 /* Documented Accreditors */
